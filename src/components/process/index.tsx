@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./style.css"
 import { AnimationProgres } from './animationProgres'
 export const Process = () => {
