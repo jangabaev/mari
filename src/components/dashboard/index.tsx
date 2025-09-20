@@ -14,7 +14,7 @@ export const Dashboard = () => {
                         <p><span>МАРИ</span> - Агентство, трансформирующее доверие лидеров мнений в измеримые бизнес-результаты для известных брендов России</p>
                     </div>
                     <div className='dashboard_click'>
-                        <button className='dashboard_click_button'>Оставить заявку</button>
+                        <button className='btn btn-primary'>Оставить заявку</button>
                         <span className='dashboard_click_line'></span>
                     </div>
                     <p className='dashboard_info_text'>Для нас инфлюенс-маркетинг — это не просто коллаборации, а способ выстраивать долгосрочные отношения между брендами и людьми, формировать эмоциональную связь и создавать истории, которые хочется разделить.</p>

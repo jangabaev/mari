@@ -7,42 +7,36 @@
   border: 1px solid #D9D9D9;
   border-radius: 30px;
   padding: 0;
-  display: flex;
-  align-items: center;
-  min-height: 920px;
   position: relative;
   overflow: hidden;
 }
 
 .about-content {
   padding: 75px;
-  flex: 1;
-  max-width: 708px;
   z-index: 2;
   position: relative;
 }
 
 .about-title {
-  font-size: 100px;
+  font-size: 96px;
   font-weight: 400;
-  line-height: 100px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .about-subtitle {
   font-size: 32px;
-  line-height: 37.5px;
   color: #A3E635;
   margin-bottom: 34px;
+  width: 470px;
 }
 
 .about-description {
   font-size: 24px;
   line-height: 29.43px;
   color: #FFFFFF;
-  margin-bottom: 144px;
+  margin-bottom: 100px;
   max-width: 558px;
 }
 
@@ -60,15 +54,14 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 1214px;
-  height: 920px;
+  width: 75%;
+  height: 100%;
   z-index: 1;
 }
 
 .about-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .btn {
@@ -91,36 +84,93 @@
   background-color: transparent;
   border-color: #A3E635;
   color: #A3E635;
-  box-shadow: 0px 0px 50px rgba(163, 230, 53, 1);
+  box-shadow: 0px 0px 10px rgba(162, 230, 53, 0.301);
 }
 
 .btn-secondary {
   background-color: transparent;
   border-color: #FF1F8F;
   color: #FF1F8F;
-  box-shadow: 0px 0px 50px rgba(255, 31, 143, 1);
+  box-shadow: 0px 0px 10px rgba(255, 31, 143, 0.233);
 }
 
-@media (max-width: 1200px) {
-  .about-card {
-    flex-direction: column;
-    min-height: auto;
+@media (max-width:1580px) {
+  .btn {
+    padding: 24px 36px;
+    border-radius: 75px;
+    font-size: 18px;
   }
-  
+
+  .about-content {
+    padding: 55px;
+  }
+
+  .about-title {
+    font-size: 72px;
+  }
+
+  .about-subtitle {
+    font-size: 24px;
+    margin-bottom: 16px;
+    width: 350px;
+  }
+
+  .about-description {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .about-image{
+    width: 60%;
+    height: 100%;
+  }
+}
+
+
+@media (max-width: 1200px) {
+.about-content {
+    padding: 44px;
+  }
+
+  .about-card {
+    min-height: auto;
+    display: flex;
+  }
+
   .about-content {
     max-width: 100%;
     padding: 50px;
   }
-  
+
   .about-title {
-    font-size: 64px;
-    line-height: 70px;
+    font-size: 58px;
   }
-  
+
+   .about-subtitle {
+    font-size: 19px;
+    margin-bottom: 12px;
+    width: 300px;
+  }
+
+  .about-actions {
+    gap: 20px;
+  }
+
+  .about-description {
+    font-size: 15px;
+    line-height: 18px;
+      margin-bottom: 70px;
+  }
+
   .about-image {
-    position: relative;
-    width: 100%;
-    height: 400px;
+    width: 60%;
+    height: 100%;
+  }
+
+  .btn {
+    padding: 20px 30px;
+    border-radius: 60px;
+    font-size: 15px;
   }
 }
 
@@ -128,24 +178,31 @@
   .about-content {
     padding: 30px;
   }
-  
+
   .about-title {
     font-size: 40px;
     line-height: 45px;
   }
-  
+
   .about-subtitle {
     font-size: 24px;
     line-height: 28px;
   }
-  
+
   .about-description {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 50px;
   }
-  
+
   .about-actions {
     gap: 20px;
   }
+
+  .btn {
+    padding: 14px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+  }
+
 }

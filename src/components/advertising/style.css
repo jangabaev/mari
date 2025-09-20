@@ -1,0 +1,286 @@
+.stats {
+  padding: 109.5px 0 75px;
+  background: #0F0F0F;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 75px;
+}
+
+.stats-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 570px;
+}
+
+.stats-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+
+.stats-row {
+  display: flex;
+  gap: 30px;
+}
+
+.stats-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.stat-card {
+  position: relative;
+  border-radius: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.stat-card-small {
+  width: 270px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.stat-card-medium {
+  width: 570px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.stat-card-large {
+  width: 570px;
+  height: 600px;
+}
+
+.stat-card-wide {
+  width: 100%;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.stat-card-green {
+  background: rgba(163, 230, 53, 0.5);
+}
+
+.stat-card-blue {
+  background: rgba(59, 130, 246, 0.5);
+}
+
+.stat-card-pink {
+  background: rgba(255, 31, 143, 0.5);
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.stat-number {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.stat-label {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #A3E635;
+}
+
+.stat-description {
+  font-size: 24px;
+  line-height: 29.43px;
+  color: #FFFFFF;
+  z-index: 2;
+  position: relative;
+  margin-top: auto;
+}
+
+.stat-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.stat-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clients-section {
+  position: relative;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  padding: 50px;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.clients-content {
+  flex: 1;
+  z-index: 2;
+  position: relative;
+}
+
+.clients-title {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 835px;
+}
+
+.clients-logos {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  z-index: 2;
+  opacity: 0.7;
+}
+
+.client-logo {
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-logo-yandex {
+  background: #06D6A0;
+  border-radius: 161.33px;
+  padding: 55px 80px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 750px;
+  height: 252px;
+}
+
+.client-logo-yandex img {
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+}
+
+.client-logo-yandex span {
+  font-size: 64.53px;
+  font-weight: 400;
+  line-height: 64.53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.clients-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2060px;
+  height: 2060px;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.clients-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .stats-grid {
+    flex-direction: column;
+  }
+  
+  .stats-left,
+  .stats-right {
+    width: 100%;
+  }
+  
+  .stat-card-small,
+  .stat-card-medium,
+  .stat-card-large {
+    width: 100%;
+  }
+  
+  .stats-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-card {
+    padding: 30px;
+  }
+  
+  .stat-number {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  
+  .stat-label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+  .clients-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  
+  .clients-logos {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin-top: 30px;
+  }
+  
+  .client-logo-yandex {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .client-logo-yandex span {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}

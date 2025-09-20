@@ -2,7 +2,7 @@
 
 export const AnimationProgres = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="720" height="581" viewBox="0 0 720 581" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 720 581" fill="none" preserveAspectRatio="xMidYMid slice">
             <g id="Frame_42">
                 <g id="Group 10">
                     <g id="Mask_group">

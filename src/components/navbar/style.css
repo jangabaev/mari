@@ -1,41 +1,231 @@
-.header{
-    background-color: #0F0F0FE5;
+.header {
+    background-color: #0f0f0f;
     padding: 16px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 21;
 }
 
-.header_items{
+.header_logo_svg {
+    height: 43px;
+    width: 113px;
+}
+
+.header_items {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
 }
 
-.headers_routes{
+.headers_routes {
     display: flex;
-    gap: 45px;
+    gap: 60px;
     align-items: center;
 }
 
-.header_links{
+.header_links {
     display: flex;
     gap: 60px;
     list-style: none;
     color: #fff;
 }
 
-.header_links li a{
+.header_links li a {
     color: #fff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
 }
 
-.headers_top_button{
-    padding: 11px 23px;
-    border-radius: 75px;
+.headers_top_button {
+    padding: 13px 31px;
+    border-radius: 100px;
     background-color: transparent;
     border: 1px solid #A3E635;
     color: #A3E635;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
+.header_menu {
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    pointer-events: none;
+    display: none;
+}
+
+.header_menu_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 13px 10px;
+    cursor: pointer;
+}
+
+.header_menu_item {
+    background-color: white;
+    width: 42px;
+    height: 4px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    /* animatsiya */
+}
+
+/* Aktiv bo'lganda (bosilganda) */
+.header_menu.active .header_menu_item:nth-child(1) {
+    transform: rotate(45deg) translate(8.5px, 8.5px);
+}
+
+.header_menu.active .header_menu_item:nth-child(2) {
+    opacity: 0;
+    /* o'rtadagi chiziq yo'qoladi */
+}
+
+.header_menu.active .header_menu_item:nth-child(3) {
+    transform: rotate(-45deg) translate(8.5px, -8.5px);
+}
+
+.header_mobil_menu {
+    display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0F0F0F;
+  z-index: 20;
+
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none; /* bosilmaydi */
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.header_mobil_menu.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto; /* faqat ochilganda bosiladi */
+}
+
+.header_mobil_menu_ul {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 26px;
+  color: #FFFFFF;
+}
+
+.header_mobil_menu_ul > li {
+  font-size: 24px;
+  border-bottom: 1px solid #676767;
+  padding-bottom: 26px;
+}
+
+
+@media (max-width:1580px) {
+    .header {
+        padding: 13.5px 0px;
+    }
+
+    .header_logo_svg {
+        height: 32px;
+        width: 85px;
+    }
+
+    .headers_routes {
+        gap: 45px;
+    }
+
+    .header_links {
+        gap: 45px;
+    }
+
+    .header_links li a {
+        font-size: 15px;
+    }
+
+    .headers_top_button {
+        padding: 11px 22px;
+        border-radius: 75px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1200px) {
+    .header {
+        padding: 9.5px 0px;
+    }
+
+    .header_logo_svg {
+        height: 27px;
+        width: 69px;
+    }
+
+    .headers_routes {
+        gap: 36px;
+    }
+
+    .header_links {
+        gap: 36px;
+    }
+
+    .header_links li a {
+        font-size: 12.5px;
+    }
+
+    .headers_top_button {
+        padding: 9px 18px;
+        border-radius: 61px;
+        font-size: 9.5px;
+    }
+}
+
+@media (max-width:756px) {
+
+    .header {
+        padding: 13px 0px;
+        background-color: #0F0F0F;
+    }
+
+    .header_logo_svg {
+        height: 38px;
+        width: 100px;
+    }
+
+    .headers_routes {
+        display: none;
+    }
+
+    .header_menu {
+        opacity: 1;
+        visibility: visible;
+        cursor: pointer;
+        pointer-events: all;
+        display: block;
+    }
+
+    .headers_top_button {
+        padding: 24px 0px;
+        border-radius: 100px;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #A3E635;
+        color: #A3E635;
+        cursor: pointer;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .header_mobil_item {
+        padding: 0px 15px;
+    }
+
+    .header_mobil_menu{
+        display: block;
+    }
+}

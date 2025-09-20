@@ -3,7 +3,7 @@ import "./style.css"
 import { AnimationProgres } from './animationProgres'
 export const Process = () => {
   return (
-     <section className="about section" id="about">
+    <section className="about" id="about">
       <div className="container">
         <div className="about-card">
           <div className="about-content">
@@ -22,7 +22,7 @@ export const Process = () => {
             </div>
           </div>
           <div className="about-image">
-            <AnimationProgres/>
+            <AnimationProgres />
           </div>
         </div>
       </div>
