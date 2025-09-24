@@ -25,7 +25,17 @@ export const Process = () => {
             <AnimationProgres />
           </div>
         </div>
+        <div className="mobil_about-actions">
+          <a href="#contact" className="btn btn-primary">
+            Получить медиакит
+          </a>
+          <a href="#contact" className="btn btn-secondary">
+            Запустить кампанию
+          </a>
+        </div>
+
       </div>
+
     </section>
   )
 }

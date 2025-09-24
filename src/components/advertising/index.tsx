@@ -1,5 +1,8 @@
 
 
+import { BackgroundCircle } from "./bacground/circle"
+// import { Stars } from "./bacground/star"
+// import { BackgroundTriangle } from "./bacground/triangle"
 import "./style.css"
 export const Advertising = () => {
   return (
@@ -11,15 +14,19 @@ export const Advertising = () => {
               <div className="stat-card stat-card-small">
                 <div className="stat-number">100</div>
                 <div className="stat-description">Подбор, запуск, аналитика кампаний</div>
-                <div className="stat-bg">
-                  <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/AKQcXRGsOp.png" alt="" />
+                <div className="stat-bg_first">
+                  <div className="stat-bg_first_relative">
+                    <BackgroundCircle className="black"/>
+                  </div>
                 </div>
               </div>
               <div className="stat-card stat-card-small stat-card-pink">
                 <div className="stat-number">100</div>
                 <div className="stat-description">Подбор, запуск, аналитика кампаний</div>
-                <div className="stat-bg">
-                  <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/Sq7jWfM4gG.png" alt="" />
+                <div className="stat-bg_second">
+                  <div className="stat-bg_second_relative">
+                    <BackgroundCircle className="black"/>
+                  </div>
                 </div>
               </div>
             </div>
@@ -42,7 +49,7 @@ export const Advertising = () => {
                   <div className="stat-label">успешных кейсов продвижения</div>
                 </div>
                 <div className="stat-description">Подбор, запуск, аналитика кампаний</div>
-                <div className="stat-bg">
+                <div className="stat-bg_star">
                   <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/0v5hwQmrvz.png" alt="" />
                 </div>
               </div>
@@ -104,6 +111,8 @@ export const Advertising = () => {
           </div>
         </div>
       </div>
+      {/* <Stars/>
+      <BackgroundTriangle/> */}
     </section>
   )
 }

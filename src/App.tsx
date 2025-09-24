@@ -1,7 +1,9 @@
-import { Advertising } from "./components/advertising"
+// import { Advertising } from "./components/advertising"
 import { Dashboard } from "./components/dashboard"
 import { Navbar } from "./components/navbar"
 import { Process } from "./components/process"
+import { Footer } from "./components/footer"
+import { Contact } from "./components/contact"
 
 function App() {
   return (
@@ -9,7 +11,9 @@ function App() {
       <Navbar/>
       <Dashboard/>
       <Process/>
-      <Advertising/>
+      {/* <Advertising/> */}
+      <Contact/>
+      <Footer />
     </main>
   )
 }

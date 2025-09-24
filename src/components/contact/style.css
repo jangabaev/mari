@@ -1,0 +1,778 @@
+.contact {
+    padding: 50px 0px;
+}
+
+.contact_flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.contact_left {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-left: none;
+    border-radius: 0px 50px 50px 0px;
+    padding: 100px 50px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.contact_left h4 {
+    font-size: 64px;
+    font-weight: 200;
+    font-family: Century Gothic;
+    text-transform: uppercase;
+}
+
+.contact_left h4>span {
+    color: #3B82F6;
+}
+
+.contact_left_buttons {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: auto;
+}
+
+.contact_left_buttons button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 32px 50px;
+    font-size: 24px;
+    border-radius: 100px;
+}
+
+.contack_left_bottom {
+    margin-top: 100px;
+}
+
+.contack_left_bottom p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    color: #676767;
+}
+
+.contack_left_bottom p>strong {
+    color: #fff;
+}
+
+.contack_left_bottom_buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.contack_left_bottom_buttons button {
+    padding: 20px 50px;
+    background-color: transparent;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.contack_left_bottom_buttons button>svg {
+    width: 50px;
+    height: 50px;
+}
+
+.contact_telegram {
+    border: 1px solid #3B82F6;
+    color: #3B82F6;
+}
+
+.contact_email {
+    border: 1px solid #A3E635;
+    color: #A3E635;
+}
+
+.contact_left_circle {
+    position: absolute;
+    left: 100%;
+    top: -10%;
+    transform: translate(-50%, -50%) scale(2);
+}
+
+.contact_left_mobil_p {
+    display: none;
+}
+
+.contact_left_dectope_p {
+    display: block;
+}
+
+.contact_button_show {
+    display: none !important;
+    color: #FF1F8F;
+    border: 1px solid #FF1F8F;
+}
+
+
+
+
+.contact_right {
+    border-left: none;
+    border-radius: 50px 0px 0px 50px;
+    padding: 100px 100px;
+    padding-right: 150px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-row {
+    margin-bottom: 40px
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 32px 50px;
+    border-radius: 34px;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: #ffffff;
+    outline: none;
+    transition: box-shadow .18s ease, border-color .18s ease, transform .12s ease;
+    font-size: 24px;
+}
+
+.textarea {
+    min-height: 110px;
+    border-radius: 50px;
+    padding-top: 22px
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: rgba(255, 255, 255, 0.35)
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: rgba(168, 226, 47, 0.9);
+    box-shadow: 0 4px 22px rgba(168, 226, 47, 0.06), inset 0 0 0 1px rgba(168, 226, 47, 0.04);
+    transform: translateY(-2px);
+}
+
+.small-note {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 42px
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.checkbox-row input {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: transparent
+}
+
+.checkbox-row label {
+    padding: 0;
+    margin: 0;
+}
+
+.checkbox-row a {
+    color: var(--accent);
+    text-decoration: underline
+}
+
+.btn-send {
+    display: inline-block;
+    padding: 32px 50px;
+    border-radius: 100px;
+    border: 1px solid rgba(168, 226, 47, 0.22);
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.06), rgba(20, 20, 20, 0.02));
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform .12s ease, box-shadow .12s ease, color .12s ease;
+    font-size: 24px;
+    color: #A3E635;
+}
+
+.btn-send:hover {
+    transform: translateY(-3px);
+}
+
+.status {
+    margin-top: 12px;
+    font-size: 13px
+}
+
+.contact_rigth_bacground {
+    position: absolute;
+    top: -45%;
+    left: -45%;
+    width: 1235px;
+    height: 1229px;
+    opacity: 0.3;
+    background: radial-gradient(50% 50% at 50% 50%, #3B82F6 0%, rgba(59, 130, 246, 0) 100%);
+    pointer-events: none;
+}
+
+.contact_rigth_bacground_second {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 1235px;
+    height: 1229px;
+    opacity: 0.3;
+    background: radial-gradient(50% 50% at 50% 50%, #06D6A0 0%, rgba(6, 214, 160, 0) 100%);
+    pointer-events: none;
+}
+
+.contact_rigth_bacground_circle {
+    position: absolute;
+    left: -36%;
+    top: -55%;
+    transform: scale(2);
+    opacity: .4;
+    pointer-events: none;
+}
+
+@media (max-width:1600px) {
+    .contact {
+        padding: 40px 0px;
+    }
+
+    .contact_flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .contact_left {
+        border-radius: 0px 37.5px 37.5px 0px;
+        padding: 70px 50px;
+        padding-left: 75px;
+    }
+
+    .contact_left h4 {
+        font-size: 48px;
+    }
+
+    .contact_left_buttons {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        width: auto;
+    }
+
+    .contact_left_buttons button {
+        padding: 24px 36px;
+        font-size: 18px;
+        border-radius: 75px;
+    }
+
+    .contack_left_bottom {
+        margin-top: 80px;
+    }
+
+    .contack_left_bottom p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .contack_left_bottom_buttons {
+        margin-top: 50px;
+        display: flex;
+        gap: 40px;
+    }
+
+    .contack_left_bottom_buttons button {
+        padding: 15px 35px;
+        font-size: 18px;
+        gap: 18px;
+        border-radius: 75px;
+    }
+
+    .contack_left_bottom_buttons button>svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .contact_left_circle {
+        position: absolute;
+        left: 50%;
+        top: -70%;
+        transform: scale(2);
+    }
+
+    /* usigóy */
+
+
+
+    .contact_right {
+        border-radius: 37.5px 0px 0px 37.5px;
+        padding: 70px 60px;
+        padding-right: 80px;
+    }
+
+    .form-row {
+        margin-bottom: 30px
+    }
+
+    .input,
+    .textarea {
+        padding: 24px 37px;
+        border-radius: 37px;
+        font-size: 18px;
+    }
+
+    .textarea {
+        min-height: 130px;
+        border-radius: 37.5px;
+        padding-top: 30px
+    }
+
+    .small-note {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 30px
+    }
+
+    .checkbox-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+    .checkbox-row input {
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+    }
+
+
+    .btn-send {
+        padding: 24px 36px;
+        border-radius: 75px;
+        font-size: 18px;
+    }
+
+
+    .contact_rigth_bacground {
+        top: -45%;
+        left: -45%;
+        width: 1235px;
+        height: 1229px;
+    }
+
+    .contact_rigth_bacground_second {
+        top: 10%;
+        left: 10%;
+        width: 1235px;
+        height: 1229px;
+    }
+
+    .contact_rigth_bacground_circle {
+        left: -50%;
+        top: -70%;
+    }
+}
+
+@media (max-width:1200px) {
+    .contact {
+        padding: 30px 0px;
+    }
+
+    .contact_flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .contact_left {
+        border-radius: 0px 30px 30px 0px;
+        padding: 60px 50px;
+        padding-left: 75px;
+    }
+
+    .contact_left h4 {
+        font-size: 38px;
+    }
+
+    .contact_left_buttons {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+    }
+
+    .contact_left_buttons button {
+        padding: 19px 30px;
+        font-size: 14px;
+        border-radius: 60px;
+    }
+
+    .contack_left_bottom {
+        margin-top: 60px;
+    }
+
+    .contack_left_bottom p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .contack_left_bottom_buttons {
+        margin-top: 52px;
+        display: flex;
+        gap: 30px;
+    }
+
+    .contack_left_bottom_buttons button {
+        padding: 12px 30px;
+        font-size: 14px;
+        gap: 18px;
+        border-radius: 60px;
+    }
+
+    .contack_left_bottom_buttons button>svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contact_left_circle {
+        position: absolute;
+        left: 45%;
+        top: -88%;
+        transform: scale(2);
+    }
+
+
+
+
+    
+    .contact_right {
+        border-radius: 30px 0px 0px 30px;
+        padding: 60px 50px;
+        padding-right: 80px;
+    }
+
+    .form-row {
+        margin-bottom: 25px
+    }
+
+    .input,
+    .textarea {
+        padding: 20px 30px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+
+    .textarea {
+        min-height: 130px;
+        border-radius: 30px;
+        padding-top: 25px
+    }
+
+    .small-note {
+        font-size: 14px;
+        margin-bottom: 25px
+    }
+
+    .checkbox-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .checkbox-row input {
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+    }
+
+
+    .btn-send {
+        padding: 20px 30px;
+        border-radius: 50px;
+        font-size: 14px;
+    }
+
+
+    .contact_rigth_bacground {
+        top: -45%;
+        left: -45%;
+        width: 1235px;
+        height: 1229px;
+    }
+
+    .contact_rigth_bacground_second {
+        top: 10%;
+        left: 10%;
+        width: 1235px;
+        height: 1229px;
+    }
+
+    .contact_rigth_bacground_circle {
+        left: -50%;
+        top: -70%;
+    }
+}
+
+
+@media (max-width:960px) {
+    .contact {
+        padding: 30px 0px;
+    }
+
+    .contact_flex {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact_left {
+        border-radius: 0px 30px 30px 0px;
+        padding: 60px 50px;
+        padding-left: 75px;
+        margin-right: 50px;
+    }
+
+    .contact_left h4 {
+        font-size: 38px;
+    }
+
+    .contact_left_buttons {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+    }
+
+    .contact_left_buttons button {
+        padding: 19px 30px;
+        font-size: 14px;
+        border-radius: 60px;
+    }
+
+    .contack_left_bottom {
+        margin-top: 60px;
+    }
+
+    .contack_left_bottom p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .contack_left_bottom_buttons {
+        margin-top: 52px;
+        display: flex;
+        gap: 30px;
+    }
+
+    .contack_left_bottom_buttons button {
+        padding: 12px 30px;
+        font-size: 14px;
+        gap: 18px;
+        border-radius: 60px;
+    }
+
+    .contack_left_bottom_buttons button>svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contact_left_circle {
+        position: absolute;
+        left: 45%;
+        top: -88%;
+        transform: scale(2);
+    }
+}
+
+@media (max-width:720px) {
+    .contact {
+        padding: 30px 0px;
+    }
+
+    .contact_flex {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact_left {
+        border-radius: 0px 30px 30px 0px;
+        padding: 60px 50px;
+        padding-left: 75px;
+        margin-right: 50px;
+    }
+
+    .contact_left h4 {
+        font-size: 36px;
+    }
+
+    .contact_left_buttons {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+    }
+
+    .contact_left_buttons button {
+        padding: 20px 41px;
+        font-size: 18px;
+        border-radius: 60px;
+    }
+
+    .contack_left_bottom {
+        margin-top: 40px;
+    }
+
+    .contack_left_bottom p {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .contack_left_bottom_buttons {
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        max-width: auto;
+        gap: 15px;
+    }
+
+    .contack_left_bottom_buttons button {
+        padding: 8px 30px;
+        font-size: 14px;
+        gap: 14px;
+        border-radius: 60px;
+    }
+
+    .contack_left_bottom_buttons button>svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .contact_left_circle {
+        position: absolute;
+        left: 45%;
+        top: -88%;
+        transform: scale(2);
+    }
+}
+
+@media (max-width:480px) {
+    .contact {
+        padding: 30px 0px;
+    }
+
+    .contact_flex {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact_left {
+        border-radius: 0px 30px 30px 0px;
+        padding: 60px 50px;
+        padding-left: 30px;
+        margin-right: 30px;
+    }
+
+    .contact_left h4 {
+        font-size: 32px;
+    }
+
+    .contact_left_buttons {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+    }
+
+    .contact_left_buttons button {
+        padding: 14px 25px;
+        font-size: 14px;
+        border-radius: 60px;
+    }
+
+    .contack_left_bottom {
+        margin-top: 40px;
+    }
+
+    .contack_left_bottom p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .contack_left_bottom_buttons {
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        max-width: auto;
+        gap: 15px;
+    }
+
+    .contack_left_bottom_buttons button {
+        padding: 8px 30px;
+        font-size: 14px;
+        gap: 14px;
+        border-radius: 60px;
+    }
+
+    .contack_left_bottom_buttons button>svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .contact_left_circle {
+        position: absolute;
+        left: 45%;
+        top: -88%;
+        transform: scale(2);
+    }
+
+    .contact_left_mobil_p {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .contact_left_dectope_p {
+        display: none;
+    }
+
+    .contact_button_show {
+        display: block !important;
+    }
+}

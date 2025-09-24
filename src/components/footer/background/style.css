@@ -1,0 +1,46 @@
+.animated-logo-wrapper {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+/* Let the inline SVG scale responsively */
+.animated-logo-wrapper svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Optional: dark background for contrast (remove if you don't want it) */
+.animated-logo-wrapper {
+    background: transparent;
+    /* padding: 8px; */
+}
+
+
+/* Re-create the stroke animations used in the original asset by targeting the path classes */
+.anim-path-0 {
+    animation: motion-ainm-id-569_-0 4.60344s linear 1.6453s infinite forwards;
+}
+
+.anim-path-1 {
+    animation: motion-ainm-id-569_-1 4.99851s linear 0.977249s infinite forwards;
+}
+
+.anim-path-2 {
+    animation: motion-ainm-id-569_-2 4.72186s linear 0.0649608s infinite forwards;
+}
+
+.anim-path-3 {
+    animation: motion-ainm-id-569_-3 4.56408s linear 0.0755281s infinite forwards;
+}
+
+.anim-path-4 {
+    animation: motion-ainm-id-569_-4 4.73366s linear 1.25163s infinite forwards;
+}
+
+.anim-path-5 {
+    animation: motion-ainm-id-569_-5 4.85619s linear 0.076214s infinite forwards;
+}
