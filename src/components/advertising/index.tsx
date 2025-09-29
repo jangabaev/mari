@@ -19,16 +19,16 @@ export const Advertising = () => {
                 <div className="stat_card_description">Подбор, запуск, аналитика кампаний</div>
                 <div className="stat_left_card_bg_first">
                   <div className="stat_left_card_bg_first_relative">
-                    <BackgroundCircle className="black" line={10} blur={true} />
+                    <img src="/assets/circle.png" alt="" />
                   </div>
                 </div>
               </div>
               <div className="stats_card stats_left_top_second">
                 <div className="stat_card_number"><h4>100</h4></div>
                 <div className="stat_card_description">Подбор, запуск, аналитика кампаний</div>
-                <div className="stat_left_card_bg_first">
+                <div className="stat_left_card_bg_second">
                   <div className="stat_left_card_bg_first_relative">
-                    <BackgroundCircle className="white" line={10} blur={true} />
+                    <BackgroundCircle className="red" line={10} />
                   </div>
                 </div>
               </div>
@@ -41,7 +41,7 @@ export const Advertising = () => {
               <div className="stat_card_description">Подбор, запуск, аналитика кампаний </div>
               <div className="stat_left_card_bg_third">
                 <div className="stat_left_card_bg_third_relative">
-                  {/* <BackgroundCircle className="white" line={15} /> */}
+                  <BackgroundCircle className="green" line={15} />
                 </div>
               </div>
             </div>

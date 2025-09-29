@@ -14,7 +14,7 @@ export const BackgroundCircle = ({ className = "",line }:{className?:string,line
           const style = {
             width: `${sizeVmin * 12+20}px`,
             height: `${sizeVmin * 12+20}px`,
-            opacity: 1 - i * 0.06,
+            opacity: 1 - i * 0.08,
           };
           return (
             <div key={i} className={`cc-ring ${className}`} style={style}>

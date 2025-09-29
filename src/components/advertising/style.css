@@ -99,15 +99,24 @@
 
 .stat_left_card_bg_first {
   position: absolute;
-  left: 120%;
+  left: -20%;
   top: -30%;
   transform: translate(-50%, -50%);
 }
 
 
+
 /* second card */
 .stats_left_top_second {
   background-color: #ff1f8f8c;
+}
+
+
+.stat_left_card_bg_second {
+  position: absolute;
+  left: 100%;
+  top: -100%;
+  transform: translate(-50%, -20%)
 }
 
 
@@ -320,6 +329,14 @@
   }
 
 
+  .stat_left_card_bg_second {
+    position: absolute;
+    left: 100%;
+    top: -120%;
+    transform: translate(-50%, -20%)
+  }
+
+
   /* third card */
   .stats_left_bottom {
     height: 100%;
@@ -527,6 +544,14 @@
   /* second card */
   .stats_left_top_second {
     background-color: #ff1f8f8c;
+  }
+
+
+  .stat_left_card_bg_second {
+    position: absolute;
+    left: 100%;
+    top: -150%;
+    transform: translate(-50%, -20%) scale(.7)
   }
 
 
@@ -1148,9 +1173,9 @@
 
   .stat_left_card_bg_first {
     position: absolute;
-    left: 120%;
-    top: -30%;
-    transform: translate(-50%, -50%);
+    left: 10%;
+    top: 0%;
+    transform: translate(-50%, -50%) scale(.5);
     will-change: transform, filter;
     backface-visibility: hidden;
     transform-style: preserve-3d;
@@ -1173,6 +1198,14 @@
   .stats_left_top_second {
     background-color: #ff1f8f8c;
   }
+
+  
+.stat_left_card_bg_second{
+  position: absolute;
+  left: 120%;
+  top: -300%;
+  transform: translate(-50%,-20%) scale(.6)
+}
 
 
   /* third card */

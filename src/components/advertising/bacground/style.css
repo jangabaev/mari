@@ -25,6 +25,7 @@
   filter: blur(12px);
   pointer-events: none;
   z-index: 3;
+
 }
 
 .cc-glow.red {
@@ -76,7 +77,15 @@
 }
 
 .cc-ring.white {
-  border: 3px solid #dadada62;
+  border: 5px solid #dadada62;
+}
+
+.cc-ring.green{
+  border: 7px solid #7cdf892f;
+}
+
+.cc-ring.red{
+  border: 7px solid #f13f8a2f;
 }
 
 /* kichik ekranlarda hajmni pasaytirish uchun */
