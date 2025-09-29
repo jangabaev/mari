@@ -5,7 +5,7 @@ import { Navbar } from "./components/navbar"
 // import { Footer } from "./components/footer"
 import { Contact } from "./components/contact"
 import { ComplexMarketing } from "./components/complexInflunse"
-import { ClientThink } from "./components/thinking"
+// import { ClientThink } from "./components/thinking"
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       {/* <Process /> */}
       {/* <Advertising/> */}
       <ComplexMarketing />
-      <ClientThink />
+      {/* <ClientThink /> */}
       <Contact />
       {/* <Footer /> */}
     </main>
