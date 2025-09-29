@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 // @ts-ignore
 import Slider from "react-slick";
 import "./style.css"
@@ -47,47 +48,36 @@ const data = [{
 }]
 
 export const ClientThink = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
     const settings = {
-        className: "center", 
-        // centerPadding: "60px",
-        // centerMode: true,
+        className: "center",
+        centerPadding: "60px",
+        centerMode: true,
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: false,
+        adaptiveHeight: true,
+        slidesToShow: width < 600 ? 1 : width < 1000 ? 2 : width < 1400 ? 3 : 4,
         responsive: [
             {
                 breakpoint: 1400,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
+                settings: { slidesToShow: 3 }
             },
             {
                 breakpoint: 1000,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
+                settings: { slidesToShow: 2 }
             },
             {
                 breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 490,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+                settings: { slidesToShow: 1 }
             }
         ]
     };

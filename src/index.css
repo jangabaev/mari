@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Century Gothic", sans-serif;
+  
+}
+
+body{
+  background-color: black;
 }
 
 @font-face {
@@ -39,6 +44,3 @@
   padding: 0 16px;
 }
 
-.main{
-  background-color: black;
-}

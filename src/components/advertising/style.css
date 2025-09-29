@@ -1060,7 +1060,7 @@
   .stats_left {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     flex: 0 0 33%
   }
@@ -1150,7 +1150,22 @@
     position: absolute;
     left: 120%;
     top: -30%;
-    transform: translate(-50%, -50%) scale(.5);
+    transform: translate(-50%, -50%);
+    will-change: transform, filter;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+
+  .stat_left_card_bg_first::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    filter: blur(4px);
+    will-change: filter;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
 
@@ -1197,14 +1212,13 @@
 
   .stats_card_fifth {
     background-color: #FFFFFF1A;
-       height: 100%;
+    height: 100%;
   }
 
   .stat_left_card_bg_fifth {
     position: absolute;
-    transform: translate(-50%, -50%) scale(.4);
-    left: 100%;
- 
+    transform: translate(-50%, -50%) scale(.6);
+    left: 140%;
   }
 
   /* sixth */
@@ -1220,7 +1234,7 @@
     gap: 25px;
     align-items: start;
     color: white;
-    
+
   }
 
   .stats_card_sixth_number h5 {
@@ -1237,11 +1251,10 @@
 
   .stat_left_card_bg_sixth {
     position: absolute;
-    transform: translate(-50%, -50%) scale(.5);
-    left: 100%;
+    transform: translate(-50%, -50%) scale(.6);
+    left: 150%;
     top: -40%;
   }
-
 
   /* seventh */
 
@@ -1251,8 +1264,8 @@
 
   .stat_left_card_bg_seventh {
     position: absolute;
-    transform: translate(-50%, -50%) scale(.5);
-    left: 90%;
-    top: 0%;
+    transform: translate(-50%, -50%) scale(.6);
+    left: 100%;
+    top: 50%;
   }
 }

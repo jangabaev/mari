@@ -69,20 +69,20 @@
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 1.25px solid #676767;
+  border: 3px solid #6767678a;
   box-sizing: border-box;
   z-index: 2;
   background: transparent;
 }
 
 .cc-ring.white {
-  border: 1.25px solid #dadada;
+  border: 3px solid #dadada62;
 }
 
 /* kichik ekranlarda hajmni pasaytirish uchun */
 @media (max-width: 600px) {
   .cc-stage {
-    width: 90vmin;
+    width:90vmin;
     height: 90vmin;
     transform: translateY(8vmin);
   }

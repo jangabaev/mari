@@ -1,7 +1,7 @@
 
 
 import "./style.css"
-import { AnimatedBackground } from './background'
+// import { Bgcode } from "./bg_code"
 export const Dashboard = () => {
     return (
         <section className='dashboard_section'>
@@ -21,7 +21,8 @@ export const Dashboard = () => {
                 </div>
             </div>
             <div className="dashboard_bacground">
-                <AnimatedBackground/>
+                {/* <Bgcode/> */}
+                <img src="/assets/bg.svg" alt="" className="dash_bg_img"/>
             </div>
         </section>
     )

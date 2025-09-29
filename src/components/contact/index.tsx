@@ -43,7 +43,7 @@ export const Contact = () => {
             </div>
             <p className="contact_left_mobil_p">ООО "МАРИ" ОГРН 1215000028440, Санкт-Петербург г, Московский пр., д. 11, лит.А Юридическая информация</p>
           </div>
-          <div className="contact_left_circle"><BackgroundCircle className="black" /></div>
+          <div className="contact_left_circle"><BackgroundCircle className="black" line={10}/></div>
         </div>
         <div className={`modal_background`} onClick={()=>setModalContact(false)}><ContactForm modal={modalContact} setModal={setModalContact} />
         </div>

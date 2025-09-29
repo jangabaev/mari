@@ -1,6 +1,6 @@
 import "./style.css"
 
-export const BackgroundCircle = ({ className = "",line ,blur}:{className?:string,line?:number,blur?:boolean}) => {
+export const BackgroundCircle = ({ className = "",line }:{className?:string,line?:number,blur?:boolean}) => {
   const count = line??20; // nechta doira bo'lishi
   const rings = Array.from({ length: count }, (_, i) => i);
 
@@ -14,8 +14,7 @@ export const BackgroundCircle = ({ className = "",line ,blur}:{className?:string
           const style = {
             width: `${sizeVmin * 12+20}px`,
             height: `${sizeVmin * 12+20}px`,
-            opacity: 1 - i * 0.02,
-            filter: i > -1 ? `blur(${blur?2+i*.4:3}px)` : "none",
+            opacity: 1 - i * 0.06,
           };
           return (
             <div key={i} className={`cc-ring ${className}`} style={style}>
