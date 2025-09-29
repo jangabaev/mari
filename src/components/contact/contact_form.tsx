@@ -4,6 +4,7 @@ import { BackgroundCircle } from "../advertising/bacground/circle";
 export default function ContactForm({ modal, setModal }: { modal: boolean, setModal: React.Dispatch<React.SetStateAction<boolean>> }) {
     const [form, setForm] = useState({ name: "", phone: "", email: "", message: "", agree: false });
     const [status, setStatus] = useState<{} | any>(null);
+    console.log(status)
     console.log(modal)
     useEffect(() => {
         // Inject stylesheet once for demo / single-file convenience

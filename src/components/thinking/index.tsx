@@ -1,4 +1,4 @@
-import React from 'react'
+// @ts-ignore
 import Slider from "react-slick";
 import "./style.css"
 
