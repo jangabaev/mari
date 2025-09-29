@@ -162,7 +162,6 @@
         top: 92%;
         width: 200px;
         height: auto;
-        filter: brightness(0) invert(1);
     }
 
     .client_logo_ruscard img {
@@ -176,7 +175,6 @@
         width: 250px;
         height: auto;
         top: 2%;
-        filter: brightness(0) invert(1);
     }
 
     .client_logo_drinks img {
@@ -248,7 +246,6 @@
         top: 92%;
         width: 180px;
         height: auto;
-        filter: brightness(0) invert(1);
     }
 
     .client_logo_ruscard img {
@@ -262,7 +259,6 @@
         width: 200px;
         height: auto;
         top: 2%;
-        filter: brightness(0) invert(1);
     }
 
     .client_logo_drinks img {
@@ -296,7 +292,6 @@
 
     .clients_logos {
         opacity: .7;
-        filter: blur(1px);
         position: absolute;
         left: 0;
         right: 0;
@@ -343,7 +338,6 @@
         top: 92%;
         width: 180px;
         height: auto;
-        filter: brightness(0) invert(1);
     }
 
     .client_logo_ruscard img {
@@ -357,7 +351,6 @@
         width: 200px;
         height: auto;
         top: 2%;
-        filter: brightness(0) invert(1);
     }
 
     .client_logo_drinks img {
@@ -389,7 +382,6 @@
 
     .clients_logos {
         opacity: .7;
-        filter: blur(2px);
         position: absolute;
         left: 0;
         right: 0;
@@ -437,7 +429,6 @@
         top: 92%;
         width: 120px;
         height: auto;
-        filter: brightness(0) invert(1);
     }
 
     .client_logo_ruscard img {
@@ -451,7 +442,6 @@
         width: 120px;
         height: auto;
         top: 2%;
-        filter: brightness(0) invert(1);
     }
 
     .client_logo_drinks img {

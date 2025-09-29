@@ -48,12 +48,13 @@ const data = [{
 
 export const ClientThink = () => {
     const settings = {
-        className: "center", centerPadding: "60px",
-        centerMode: true,
+        className: "center", 
+        // centerPadding: "60px",
+        // centerMode: true,
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
             {
@@ -82,7 +83,7 @@ export const ClientThink = () => {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 490,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

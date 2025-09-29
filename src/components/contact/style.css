@@ -267,7 +267,7 @@
     pointer-events: none;
 }
 
-.contact_rigth_register{
+.contact_rigth_register {
     width: max-content;
     height: max-content;
 }
@@ -789,7 +789,7 @@
 
     /* usi */
 
-    .contact_right{
+    .contact_right {
         visibility: hidden;
         opacity: 0;
         pointer-events: none;
@@ -891,13 +891,12 @@
         display: none;
     }
 
-    .contact_rigth_register{
+    .contact_rigth_register {
         padding: 30px;
         border-radius: 30px;
-        margin: 0px 30px;
-        backdrop-filter:blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        background-color: white;
+        margin: 0 30px;
+        background-color: rgb(255, 255, 255);
+        /* Yengil shaffof oq fon */
         max-width: clamp(300px, 92%, 1770px);
     }
 }
