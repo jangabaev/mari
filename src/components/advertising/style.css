@@ -136,7 +136,6 @@
   transform: translate(-50%, -50%);
   left: 90%;
   top: 0%;
-    filter: blur(2px);
 }
 
 .stat_left_card_bg_fourth img {
@@ -156,7 +155,6 @@
   position: absolute;
   transform: translate(-50%, -50%);
   left: 100%;
-      filter: blur(2px);
 }
 
 /* sixth */
@@ -192,7 +190,6 @@
   transform: translate(-50%, -50%);
   left: 100%;
   top: -40%;
-      filter: blur(2px);
 }
 
 
@@ -207,7 +204,6 @@
   transform: translate(-50%, -50%);
   left: 70%;
   top: 0%;
-      filter: blur(2px);
 }
 
 
@@ -1155,7 +1151,6 @@
     left: 120%;
     top: -30%;
     transform: translate(-50%, -50%) scale(.5);
-    filter: blur(4px);
   }
 
 
@@ -1190,7 +1185,6 @@
     transform: translate(-50%, -50%);
     left: 90%;
     top: 0%;
-filter: blur(5px);
   }
 
   .stat_left_card_bg_fourth img {
@@ -1209,7 +1203,6 @@ filter: blur(5px);
   .stat_left_card_bg_fifth {
     position: absolute;
     transform: translate(-50%, -50%) scale(.4);
-    filter: blur(10px);
     left: 100%;
  
   }
@@ -1247,7 +1240,6 @@ filter: blur(5px);
     transform: translate(-50%, -50%) scale(.5);
     left: 100%;
     top: -40%;
-    filter: blur(6px);
   }
 
 
@@ -1262,6 +1254,5 @@ filter: blur(5px);
     transform: translate(-50%, -50%) scale(.5);
     left: 90%;
     top: 0%;
-    filter: blur(5px);
   }
 }

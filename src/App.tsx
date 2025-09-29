@@ -1,4 +1,4 @@
-import { Advertising } from "./components/advertising"
+// import { Advertising } from "./components/advertising"
 import { Dashboard } from "./components/dashboard"
 import { Navbar } from "./components/navbar"
 import { Process } from "./components/process"
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Dashboard />
       <Process />
-      <Advertising/>
+      {/* <Advertising/> */}
       <ComplexMarketing />
       <ClientThink />
       <Contact />
