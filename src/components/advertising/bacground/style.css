@@ -60,6 +60,8 @@
 .cc-smear.black{
   background: transparent;
 }
+
+
 /* har bir doira (ring) */
 .cc-ring {
   position: absolute;
@@ -71,6 +73,10 @@
   box-sizing: border-box;
   z-index: 2;
   background: transparent;
+}
+
+.cc-ring.white {
+  border: 1.25px solid #dadada;
 }
 
 /* kichik ekranlarda hajmni pasaytirish uchun */

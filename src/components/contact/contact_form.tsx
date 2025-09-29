@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { BackgroundCircle } from "../advertising/bacground/circle";
 
-export default function ContactForm() {
+export default function ContactForm({ modal, setModal }: { modal: boolean, setModal: React.Dispatch<React.SetStateAction<boolean>> }) {
     const [form, setForm] = useState({ name: "", phone: "", email: "", message: "", agree: false });
     const [status, setStatus] = useState<{} | any>(null);
-    console.log(status)
+    console.log(modal)
     useEffect(() => {
         // Inject stylesheet once for demo / single-file convenience
 
@@ -48,7 +48,8 @@ export default function ContactForm() {
     }
 
     return (
-        <form onSubmit={onSubmit} noValidate className="contact_right">
+        <form onSubmit={onSubmit} noValidate className={`contact_right ${modal && "active"}`} onClick={()=>setModal(false)}>
+            <div className="contact_rigth_register" onClick={(e)=>e.stopPropagation()}>
             <div className="contact_right_form">
                 <div className="form-row">
                     <input className="input" name="name" placeholder="Имя" value={form.name} onChange={onChange} />
@@ -77,10 +78,11 @@ export default function ContactForm() {
                     {status.text}
                 </div>
             )} */}
+            </div>
 
             <div className="contact_rigth_bacground"></div>
             <div className="contact_rigth_bacground_second"></div>
-            <div className="contact_rigth_bacground_circle"><BackgroundCircle className="black"/></div>
+            <div className="contact_rigth_bacground_circle"><BackgroundCircle className="black" /></div>
         </form>
     );
 }

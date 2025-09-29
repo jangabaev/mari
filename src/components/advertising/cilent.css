@@ -1,0 +1,468 @@
+.clients_section {
+    margin-top: 40px;
+    border-radius: 50px;
+    border: 1px solid white;
+    position: relative;
+    padding: 200px 75px;
+    overflow: hidden;
+}
+
+.clients_content {
+    padding: 5px 0px;
+    color: white;
+}
+
+.clients_logos {
+    opacity: .7;
+}
+
+.clients_title {
+    font-family: Century Gothic;
+    font-weight: 600;
+    font-style: Regular;
+    font-size: 64px;
+    line-height: 100%;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+.clients_title span {
+    color: #3B82F6;
+}
+
+.client_logo_yandex {
+    position: absolute;
+    left: 80%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: auto;
+}
+
+.client_logo_yandex svg {
+    width: 100%;
+}
+
+.client_logo_rostic {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 85%;
+    top: 30%;
+    width: 400px;
+    height: auto;
+}
+
+.client_logo_rostic svg {
+    width: 100%;
+}
+
+.client_logo_zasport {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 85%;
+    top: 70%;
+    width: 175px;
+    height: auto;
+}
+
+.client_logo_zasport img {
+    width: 100%;
+}
+
+.client_logo_ruscard {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(30deg);
+    left: 95%;
+    top: 92%;
+    width: 270px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.client_logo_ruscard img {
+    width: 100%;
+}
+
+.client_logo_drinks {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    left: 95%;
+    width: 320px;
+    height: auto;
+    top: 2%;
+    filter: brightness(0) invert(1);
+}
+
+.client_logo_drinks img {
+    width: 100%;
+}
+
+.clients_bg {
+    position: absolute;
+    left: 120%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:1600px) {
+    .clients_section {
+        margin-top: 40px;
+        border-radius: 35px;
+        padding: 150px 50px;
+    }
+
+    .clients_content {
+        padding: 5px 0px;
+        color: white;
+        font-weight: 400;
+    }
+
+    .clients_logos {
+        opacity: .7;
+    }
+
+    .clients_title {
+        font-size: 48px;
+        width: 60%;
+    }
+
+    .client_logo_yandex {
+        position: absolute;
+        left: 80%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        width: 550px;
+        height: auto;
+    }
+
+
+
+    .client_logo_rostic {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 85%;
+        top: 30%;
+        width: 280px;
+        height: auto;
+    }
+
+    .client_logo_zasport {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 85%;
+        top: 70%;
+        width: 120px;
+        height: auto;
+    }
+
+    .client_logo_ruscard {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(30deg);
+        left: 95%;
+        top: 92%;
+        width: 200px;
+        height: auto;
+        filter: brightness(0) invert(1);
+    }
+
+    .client_logo_ruscard img {
+        width: 100%;
+    }
+
+    .client_logo_drinks {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(-30deg);
+        left: 95%;
+        width: 250px;
+        height: auto;
+        top: 2%;
+        filter: brightness(0) invert(1);
+    }
+
+    .client_logo_drinks img {
+        width: 100%;
+    }
+
+    .clients_bg {
+        position: absolute;
+        left: 140%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media (max-width:1200px) {
+    .clients_section {
+        margin-top: 40px;
+        border-radius: 35px;
+        padding: 150px 50px;
+    }
+
+    .clients_content {
+        padding: 5px 0px;
+        color: white;
+        font-weight: 400;
+    }
+
+    .clients_logos {
+        opacity: .7;
+    }
+
+    .clients_title {
+        font-size: 40px;
+        width: 65%;
+    }
+
+    .client_logo_yandex {
+        position: absolute;
+        left: 80%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        width: 480px;
+        height: auto;
+    }
+
+    .client_logo_rostic {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 85%;
+        top: 30%;
+        width: 250px;
+        height: auto;
+    }
+
+    .client_logo_zasport {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 85%;
+        top: 70%;
+        width: 100px;
+        height: auto;
+    }
+
+    .client_logo_ruscard {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(30deg);
+        left: 95%;
+        top: 92%;
+        width: 180px;
+        height: auto;
+        filter: brightness(0) invert(1);
+    }
+
+    .client_logo_ruscard img {
+        width: 100%;
+    }
+
+    .client_logo_drinks {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(-30deg);
+        left: 95%;
+        width: 200px;
+        height: auto;
+        top: 2%;
+        filter: brightness(0) invert(1);
+    }
+
+    .client_logo_drinks img {
+        width: 100%;
+    }
+
+    .clients_bg {
+        position: absolute;
+        left: 160%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+@media (max-width:920px) {
+    .clients_section {
+        margin-top: 40px;
+        border-radius: 35px;
+        padding: 100px 35px;
+    }
+
+    .clients_content {
+        padding: 5px 0px;
+        color: white;
+        z-index: 12;
+        position: relative;
+        font-weight: 400;
+    }
+
+    .clients_logos {
+        opacity: .7;
+        filter: blur(1px);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .clients_title {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .client_logo_yandex {
+        position: absolute;
+        left: 80%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        width: 480px;
+        height: auto;
+    }
+
+    .client_logo_rostic {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 85%;
+        top: 30%;
+        width: 250px;
+        height: auto;
+    }
+
+    .client_logo_zasport {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 85%;
+        top: 70%;
+        width: 100px;
+        height: auto;
+    }
+
+    .client_logo_ruscard {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(30deg);
+        left: 95%;
+        top: 92%;
+        width: 180px;
+        height: auto;
+        filter: brightness(0) invert(1);
+    }
+
+    .client_logo_ruscard img {
+        width: 100%;
+    }
+
+    .client_logo_drinks {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(-30deg);
+        left: 95%;
+        width: 200px;
+        height: auto;
+        top: 2%;
+        filter: brightness(0) invert(1);
+    }
+
+    .client_logo_drinks img {
+        width: 100%;
+    }
+
+    .clients_bg {
+        position: absolute;
+        left: 180%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media (max-width:480px) {
+    .clients_section {
+        margin-top: 20px;
+        border-radius: 35px;
+        padding: 50px 30px;
+    }
+
+    .clients_content {
+        padding: 5px 0px;
+        color: white;
+        z-index: 12;
+        position: relative;
+    }
+
+    .clients_logos {
+        opacity: .7;
+        filter: blur(2px);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .clients_title {
+        font-size: 32px;
+        width: 100%;
+        font-weight: 400;
+    }
+
+    .client_logo_yandex {
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        width: 280px;
+        height: auto;
+    }
+
+    .client_logo_rostic {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 85%;
+        top: 30%;
+        width: 160px;
+        height: auto;
+    }
+
+    .client_logo_zasport {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 85%;
+        top: 70%;
+        width: 70px;
+        height: auto;
+    }
+
+    .client_logo_ruscard {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(30deg);
+        left: 95%;
+        top: 92%;
+        width: 120px;
+        height: auto;
+        filter: brightness(0) invert(1);
+    }
+
+    .client_logo_ruscard img {
+        width: 100%;
+    }
+
+    .client_logo_drinks {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(-30deg);
+        left: 95%;
+        width: 120px;
+        height: auto;
+        top: 2%;
+        filter: brightness(0) invert(1);
+    }
+
+    .client_logo_drinks img {
+        width: 100%;
+    }
+
+    .clients_bg {
+        position: absolute;
+        left: 160%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+}

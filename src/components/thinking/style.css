@@ -1,0 +1,610 @@
+.cilent_title h3 {
+    font-weight: 400 !important;
+}
+
+.cilent_title_green {
+    color: #A3E635 !important;
+}
+
+.cilent_title_blue {
+    color: #3B82F6 !important;
+}
+
+.cilent_title p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 36%;
+    margin-top: 50px;
+}
+
+.cilent_buttons {
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+}
+
+.complex_title {
+    font-size: 96px;
+}
+
+.cilent_buttons_btn {
+    background-color: transparent;
+    padding: 32px 50px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 100px;
+}
+
+.slider_cards {
+    padding: 15px;
+    margin: 50px 0px;
+    margin-left: -50px;
+}
+
+.slider_card {
+    border: 1px solid #A3E635;
+    padding: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 22.5px;
+}
+
+.slider_card_top h4 {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 22px;
+}
+
+.slider_card_top_img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider_card_top_img img {
+    width: 100%;
+    height: auto;
+}
+
+.cilent_bottom_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slick-arrow {
+    display: none !important;
+}
+
+.slider_card_bottom_line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 22.5px;
+}
+
+.slider_card_bottom_life {
+    font-family: Century Gothic;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+}
+
+.slider_card_bottom_followers {
+    font-family: Century Gothic;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #A3E635;
+}
+
+.slider_card_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width:1600px) {
+    .cilent_title p {
+        font-size: 18px;
+        margin-top: 35px;
+    }
+
+
+    .complex_title {
+        font-size: 72px;
+        line-height: 75px;
+    }
+
+    .cilent_buttons {
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+    }
+
+    .cilent_buttons_btn {
+        padding: 24px 36px;
+        font-size: 18px;
+        border-radius: 75px;
+    }
+
+    .slider_cards {
+        padding: 15px;
+        margin: 50px 0px;
+        margin-left: -50px;
+    }
+
+    .slider_card {
+        border: 1px solid #A3E635;
+        padding: 35px;
+        border-radius: 35px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 22.5px;
+    }
+
+    .slider_card_top h4 {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 30px;
+    }
+
+    .slider_card_top_img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider_card_top_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cilent_bottom_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .slider_card_bottom_line {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin-bottom: 22.5px;
+    }
+
+    .slider_card_bottom_life {
+        font-family: Century Gothic;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+    }
+
+    .slider_card_bottom_followers {
+        font-family: Century Gothic;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #A3E635;
+    }
+
+    .slider_card_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width:1200px) {
+    .cilent_title p {
+        font-size: 14px;
+        margin-top: 35px;
+    }
+
+    .complex_title {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    .cilent_buttons {
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+    }
+
+    .cilent_buttons_btn {
+        padding: 19px 28px;
+        font-size: 14px;
+        border-radius: 60px;
+    }
+
+    .slider_cards {
+        padding: 9px;
+        margin: 30px 0px;
+        margin-left: -55px;
+    }
+
+    .slider_card {
+        border: 1px solid #A3E635;
+        padding: 35px;
+        border-radius: 35px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .slider_card_top h4 {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+    }
+
+    .slider_card_top_img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider_card_top_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cilent_bottom_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .slider_card_bottom_line {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin-bottom: 18px;
+    }
+
+    .slider_card_bottom_life {
+        font-family: Century Gothic;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+    }
+
+    .slider_card_bottom_followers {
+        font-family: Century Gothic;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #A3E635;
+    }
+
+    .slider_card_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width:1000px) {
+    .cilent_title p {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .complex_title {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .cilent_buttons {
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+    }
+
+    .cilent_buttons_btn {
+        padding: 15px 25px;
+        font-size: 13px;
+        border-radius: 60px;
+    }
+
+    .slider_cards {
+        padding: 9px;
+        margin: 30px 0px;
+        margin-left: -55px;
+    }
+
+    .slider_card {
+        border: 1px solid #A3E635;
+        padding: 35px;
+        border-radius: 35px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .slider_card_top h4 {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+    }
+
+    .slider_card_top_img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider_card_top_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cilent_bottom_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .slider_card_bottom_line {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin-bottom: 18px;
+    }
+
+    .slider_card_bottom_life {
+        font-family: Century Gothic;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+    }
+
+    .slider_card_bottom_followers {
+        font-family: Century Gothic;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #A3E635;
+    }
+
+    .slider_card_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width:720px) {
+    .cilent_title p {
+        font-size: 14px;
+        margin-top: 30px;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .cilent_buttons {
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+    }
+
+    .cilent_buttons_btn {
+        padding: 15px 25px;
+        font-size: 13px;
+        border-radius: 60px;
+    }
+
+    .slider_cards {
+        padding: 9px;
+        margin: 30px 0px;
+        margin-left: -55px;
+    }
+
+    .slider_card {
+        border: 1px solid #A3E635;
+        padding: 25px;
+        border-radius: 35px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .slider_card_top h4 {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 22px;
+    }
+
+    .slider_card_top_img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider_card_top_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cilent_bottom_buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cilent_bottom_buttons button {
+        width: 100%;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .slider_card_bottom_line {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin-bottom: 15px;
+    }
+
+    .slider_card_bottom_life {
+        font-family: Century Gothic;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 12px;
+    }
+
+    .slider_card_bottom_followers {
+        font-family: Century Gothic;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #A3E635;
+    }
+
+    .slider_card_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+@media (max-width:600px) {
+    .cilent_title p {
+        font-size: 14px;
+        margin-top: 30px;
+        width: 70%;
+        margin-bottom: 0px;
+        line-height: 22px;
+    }
+
+    .complex_title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .cilent_buttons {
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+        display: none;
+    }
+
+    .cilent_buttons_btn {
+        padding: 15px 25px;
+        font-size: 13px;
+        border-radius: 60px;
+    }
+
+    .slider_cards {
+        padding: 9px;
+        margin: 30px 0px;
+        margin-left: -55px;
+    }
+
+    .slider_card {
+        border: 1px solid #A3E635;
+        padding: 25px;
+        border-radius: 35px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .slider_card_top h4 {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 22px;
+    }
+
+    .slider_card_top_img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider_card_top_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cilent_bottom_buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cilent_bottom_buttons button {
+        width: 100%;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .slider_card_bottom_line {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        margin-bottom: 15px;
+    }
+
+    .slider_card_bottom_life {
+        font-family: Century Gothic;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 12px;
+    }
+
+    .slider_card_bottom_followers {
+        font-family: Century Gothic;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #A3E635;
+    }
+
+    .slider_card_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
