@@ -59,6 +59,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 3;
 }
 
 .stat_card_number h4 {

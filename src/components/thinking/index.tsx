@@ -82,7 +82,7 @@ export const ClientThink = () => {
         ]
     };
     return (
-        <section className="cilents complex">
+        <section className="cilents complex" id="bloger">
             <div className="container">
                 <div className="complex_title cilent_title">
                     <h3>более <span className='cilent_title_green'>10000 селебрити</span> суммарной аудиторией более <span className='cilent_title_blue'>100000 млн подписчиков </span></h3>

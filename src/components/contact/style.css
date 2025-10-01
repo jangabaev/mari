@@ -23,9 +23,6 @@
     overflow: hidden;
 }
 
-
-
-
 .contact_left h4 {
     font-size: 64px;
     font-weight: 200;
@@ -107,7 +104,7 @@
 .contact_left_circle {
     position: absolute;
     left: 100%;
-    top: -10%;
+    top: -14%;
     transform: translate(-50%, -50%) scale(2);
     pointer-events: none;
 }
@@ -126,9 +123,6 @@
     border: 1px solid #FF1F8F;
 }
 
-
-
-
 .contact_right {
     border-left: none;
     border-radius: 50px 0px 0px 50px;
@@ -140,6 +134,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 }
 
 .form-row {
@@ -261,7 +256,7 @@
     z-index: 10;
     position: absolute;
     left: -36%;
-    top: -55%;
+    top: -58%;
     transform: scale(2);
     opacity: .4;
     pointer-events: none;
@@ -336,8 +331,8 @@
 
     .contact_left_circle {
         position: absolute;
-        left: 50%;
-        top: -70%;
+        left: 65%;
+        top: -60%;
         transform: scale(2);
     }
 
@@ -410,8 +405,8 @@
     }
 
     .contact_rigth_bacground_circle {
-        left: -50%;
-        top: -70%;
+        left: -35%;
+        top: -60%;
     }
 }
 
@@ -770,8 +765,8 @@
     .contact_left_circle {
         position: absolute;
         left: 45%;
-        top: -88%;
-        transform: scale(2);
+        top: -60%;
+        transform: scale(1.4);
     }
 
     .contact_left_mobil_p {

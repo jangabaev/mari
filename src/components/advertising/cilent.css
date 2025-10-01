@@ -10,10 +10,12 @@
 .clients_content {
     padding: 5px 0px;
     color: white;
+    z-index: 10;
 }
 
 .clients_logos {
     opacity: .7;
+    z-index: 1;
 }
 
 .clients_title {
@@ -24,6 +26,7 @@
     line-height: 100%;
     text-transform: uppercase;
     width: 60%;
+    z-index: 3;
 }
 
 .clients_title span {
@@ -97,9 +100,10 @@
     width: 100%;
 }
 
+
 .clients_bg {
     position: absolute;
-    left: 120%;
+    left: 100%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -119,6 +123,7 @@
 
     .clients_logos {
         opacity: .7;
+        z-index: 10;
     }
 
     .clients_title {
@@ -183,7 +188,7 @@
 
     .clients_bg {
         position: absolute;
-        left: 140%;
+        left: 100%;
         top: 50%;
         transform: translate(-50%, -50%);
     }
@@ -267,7 +272,7 @@
 
     .clients_bg {
         position: absolute;
-        left: 160%;
+        left: 120%;
         top: 50%;
         transform: translate(-50%, -50%);
     }
@@ -449,6 +454,7 @@
     }
 
     .clients_bg {
+        display: none;
         position: absolute;
         left: 160%;
         top: 50%;

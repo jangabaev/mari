@@ -1,10 +1,21 @@
 
 
+import { useModal } from "../../modal.context"
 import "./style.css"
-// import { Bgcode } from "./bg_code"
 export const Dashboard = () => {
+    const { openModal } = useModal()
+    const handleScroll = (link: string) => {
+        const section = document.getElementById(link)
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth", block: "start" })
+        }
+    }
+    const clickButton = () => {
+        handleScroll("contact")
+        openModal()
+    }
     return (
-        <section className='dashboard_section'>
+        <section className='dashboard_section' id="home">
             <div className='dashboard'>
                 <div className="container">
                     <h1 className='dashboard_title'>Инфлюенс-маркетинг
@@ -14,7 +25,7 @@ export const Dashboard = () => {
                         <p><span>МАРИ</span> - Агентство, трансформирующее доверие лидеров мнений в измеримые бизнес-результаты для известных брендов России</p>
                     </div>
                     <div className='dashboard_click'>
-                        <button className='btn btn-primary'>Оставить заявку</button>
+                        <button className='btn btn-primary' onClick={() => clickButton()}>Оставить заявку</button>
                         <span className='dashboard_click_line'></span>
                     </div>
                     <p className='dashboard_info_text'>Для нас инфлюенс-маркетинг — это не просто коллаборации, а способ выстраивать долгосрочные отношения между брендами и людьми, формировать эмоциональную связь и создавать истории, которые хочется разделить.</p>
@@ -22,7 +33,7 @@ export const Dashboard = () => {
             </div>
             <div className="dashboard_bacground">
                 {/* <Bgcode/> */}
-                <img src="/assets/bg.svg" alt="" className="dash_bg_img"/>
+                <img src="/assets/bg.svg" alt="" className="dash_bg_img" />
             </div>
         </section>
     )

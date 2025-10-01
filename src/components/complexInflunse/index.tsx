@@ -24,7 +24,7 @@ const data = [
     text: "Разработка креативных концепций "
   }
 ]
-export const ComplexMarketing = () => {
+export const  ComplexMarketing = () => {
   return (
     <main className="main">
       <section className="brand">

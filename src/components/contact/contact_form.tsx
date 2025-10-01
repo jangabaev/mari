@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { BackgroundCircle } from "../advertising/bacground/circle";
+import { useModal } from "../../modal.context";
 
-export default function ContactForm({ modal, setModal }: { modal: boolean, setModal: React.Dispatch<React.SetStateAction<boolean>> }) {
+export default function ContactForm() {
     const [form, setForm] = useState({ name: "", phone: "", email: "", message: "", agree: false });
-    const [status, setStatus] = useState<{} | any>(null);
-    console.log(status)
-    console.log(modal)
+    // const [status, setStatus] = useState<{} | any>(null);
+    const { isOpen, closeModal } = useModal()
     useEffect(() => {
         // Inject stylesheet once for demo / single-file convenience
 
@@ -35,46 +35,46 @@ export default function ContactForm({ modal, setModal }: { modal: boolean, setMo
         e.preventDefault();
         const err = validate();
         if (err) {
-            setStatus({ type: "error", text: err });
+            // setStatus({ type: "error", text: err });
             return;
         }
-        setStatus({ type: "pending", text: "Sending..." });
+        // setStatus({ type: "pending", text: "Sending..." });
 
         // Simulate send
         await new Promise((r) => setTimeout(r, 800));
-        setStatus({ type: "success", text: "Message sent — thank you!" });
+        // setStatus({ type: "success", text: "Message sent — thank you!" });
 
         // Reset form after send
         setForm({ name: "", phone: "", email: "", message: "", agree: false });
     }
 
     return (
-        <form onSubmit={onSubmit} noValidate className={`contact_right ${modal && "active"}`} onClick={()=>setModal(false)}>
-            <div className="contact_rigth_register" onClick={(e)=>e.stopPropagation()}>
-            <div className="contact_right_form">
-                <div className="form-row">
-                    <input className="input" name="name" placeholder="Имя" value={form.name} onChange={onChange} />
-                </div>
+        <form onSubmit={onSubmit} noValidate className={`contact_right ${isOpen && "active"}`} onClick={() => closeModal()}>
+            <div className="contact_rigth_register" onClick={(e) => e.stopPropagation()}>
+                <div className="contact_right_form">
+                    <div className="form-row">
+                        <input className="input" name="name" placeholder="Имя" value={form.name} onChange={onChange} />
+                    </div>
 
-                <div className="form-row">
-                    <input className="input" name="phone" placeholder="+7" value={form.phone} onChange={onChange} />
-                </div>
+                    <div className="form-row">
+                        <input className="input" name="phone" placeholder="+7" value={form.phone} onChange={onChange} />
+                    </div>
 
-                <div className="form-row">
-                    <input className="input" name="email" type="email" placeholder="Почта" value={form.email} onChange={onChange} />
-                </div>
+                    <div className="form-row">
+                        <input className="input" name="email" type="email" placeholder="Почта" value={form.email} onChange={onChange} />
+                    </div>
 
-                <div className="form-row">
-                    <textarea className="textarea" name="message" placeholder="Сообщение" value={form.message} onChange={onChange} />
-                </div></div>
-            <div>
-                <div className="checkbox-row">
-                    <input id="agree" name="agree" type="checkbox" checked={form.agree} onChange={onChange} />
-                    <label htmlFor="agree" className="small-note">Я согласен с <a href="#">политикой конфиденциальности</a></label>
-                </div>
-                <button type="submit" className="btn-send">Отправить</button></div>
+                    <div className="form-row">
+                        <textarea className="textarea" name="message" placeholder="Сообщение" value={form.message} onChange={onChange} />
+                    </div></div>
+                <div>
+                    <div className="checkbox-row">
+                        <input id="agree" name="agree" type="checkbox" checked={form.agree} onChange={onChange} />
+                        <label htmlFor="agree" className="small-note">Я согласен с <a href="#">политикой конфиденциальности</a></label>
+                    </div>
+                    <button type="submit" className="btn-send">Отправить</button></div>
 
-            {/* {status && (
+                {/* {status && (
                 <div className="status" role={status.type === "error" ? "alert" : "status"} style={{ color: status.type === "error" ? "#FF8BA7" : "#bff081" }}>
                     {status.text}
                 </div>

@@ -8,7 +8,7 @@ import "./cilent.css"
 
 export const Advertising = () => {
   return (
-    <section className="stats section">
+    <section className="stats section" id="statstika">
       <div className="container">
         <div className="stats_grid">
 
@@ -107,7 +107,7 @@ export const Advertising = () => {
           </div>
         </div>
 
-        
+
         {/* cilents  */}
         <div className="clients_section">
           <div className="clients_content">
@@ -163,7 +163,7 @@ export const Advertising = () => {
             </div>
           </div>
           <div className="clients_bg">
-            <BackgroundCircle line={25} />
+            <BackgroundCircle line={30} className="black" />
           </div>
         </div>
       </div>
