@@ -1072,7 +1072,7 @@
 }
 
 
-@media (max-width:480px) {
+@media (max-width:600px) {
   .stats {
     padding: 37.5px 0;
   }
