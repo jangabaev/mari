@@ -32,8 +32,6 @@ export const Dashboard = () => {
                 </div>
             </div>
             <div className="dashboard_bacground">
-                {/* <Bgcode/> */}
-                <img src="/assets/bg.svg" alt="" className="dash_bg_img" />
             </div>
         </section>
     )
