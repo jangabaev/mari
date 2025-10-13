@@ -13,12 +13,14 @@ const pages = [
 export const Navbar = () => {
     const {openModal}=useModal()
     const [menu, setMenu] = useState(false)
+    
     const handleScroll = (link: string) => {
         const section = document.getElementById(link)
         if (section) {
             section.scrollIntoView({ behavior: "smooth", block: "start" })
         }
     }
+
     const handleButtonClick = () => {
         handleScroll("contact")
     }

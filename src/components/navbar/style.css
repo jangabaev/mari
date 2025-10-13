@@ -61,69 +61,74 @@
 .header_menu_items {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 13px 10px;
-    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 12px;
 }
 
 .header_menu_item {
     background-color: white;
-    width: 42px;
-    height: 4px;
+    width: 34px;
+    height: 3.5px;
     border-radius: 2px;
-    transition: all 0.3s ease;
-    /* animatsiya */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
 }
 
-/* Aktiv bo'lganda (bosilganda) */
 .header_menu.active .header_menu_item:nth-child(1) {
-    transform: rotate(45deg) translate(8.5px, 8.5px);
+    transform: translateY(10px) rotate(45deg);
 }
 
 .header_menu.active .header_menu_item:nth-child(2) {
     opacity: 0;
-    /* o'rtadagi chiziq yo'qoladi */
 }
 
 .header_menu.active .header_menu_item:nth-child(3) {
-    transform: rotate(-45deg) translate(8.5px, -8.5px);
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+@supports (-webkit-touch-callout: none) {
+    .header_menu_item {
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+    }
 }
 
 .header_mobil_menu {
     display: none;
-  position: fixed;
-  top: 80px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #0F0F0F;
-  z-index: 20;
-
-  transform: translateY(-100%);
-  opacity: 0;
-  pointer-events: none; /* bosilmaydi */
-  transition: transform 0.4s ease, opacity 0.4s ease;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0F0F0F;
+    z-index: 20;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .header_mobil_menu.show {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto; /* faqat ochilganda bosiladi */
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .header_mobil_menu_ul {
-  padding: 50px 0px;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  gap: 26px;
-  color: #FFFFFF;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 26px;
+    color: #FFFFFF;
 }
 
-.header_mobil_menu_ul > li {
-  font-size: 24px;
-  border-bottom: 1px solid #676767;
-  padding-bottom: 26px;
+.header_mobil_menu_ul>li {
+    font-size: 24px;
+    border-bottom: 1px solid #676767;
+    padding-bottom: 26px;
 }
 
 
@@ -225,7 +230,7 @@
         padding: 0px 15px;
     }
 
-    .header_mobil_menu{
+    .header_mobil_menu {
         display: block;
     }
 }
