@@ -16,8 +16,8 @@ export const Process = () => {
               <a href="#contact" className="btn btn-primary">
                 Получить медиакит
               </a>
-              <a href="#contact" className="btn btn-secondary">
-                Запустить кампанию
+              <a href="https://t.me/Reklama_Elena" className="btn btn-secondary">
+                отправить бриф
               </a>
             </div>
           </div>
@@ -29,8 +29,8 @@ export const Process = () => {
           <a href="#contact" className="btn btn-primary">
             Получить медиакит
           </a>
-          <a href="#contact" className="btn btn-secondary">
-            Запустить кампанию
+          <a href="https://t.me/Reklama_Elena" className="btn btn-secondary">
+            отправить бриф
           </a>
         </div>
 

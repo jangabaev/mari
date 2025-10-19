@@ -83,17 +83,7 @@ export const ClientThink = () => {
     };
     return (
         <section className="cilents complex" id="bloger">
-            <div className="container">
-                <div className="complex_title cilent_title">
-                    <h3>более <span className='cilent_title_green'>10000 селебрити</span> суммарной аудиторией более <span className='cilent_title_blue'>100000 млн подписчиков </span></h3>
-                    <p>соединяет бренды и блогеров,
-                        закрывая задачи на 360° в инфлюенс-маркетинге
-                    </p>
-                </div>
-                <div className="cilent_buttons">
-                    <button className='cilent_buttons_btn btn'>Уникальный креатив</button>
-                    <button className='cilent_buttons_btn btn'> Эксклюзивные блогеры</button>
-                </div>
+            {/* <div className="container">
                 <Slider {...settings}>{
                     data.map((el => <div className="slider_cards" key={el.id}>
                         <div className="slider_card">
@@ -115,7 +105,7 @@ export const ClientThink = () => {
                     <button className='btn btn-primary'>Хочу запустить кампанию</button>
                     <button className='btn btn-secondary'>Хочу стать блогером МАРИ</button>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }

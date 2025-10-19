@@ -4,33 +4,34 @@ import "./style.css"
 const data = [
   {
     id: 1,
-    name: "Инфлюенс маркетинг",
-    text: "Подбор, запуск, аналитика кампаний "
+    name: "Подбор инфлюенсеров",
+    text: ["Целевой аудитории,", "Охвата и вовлеченности,", "Тематики контента,", "Истории сотрудничества,", "Анализа эффективности"]
   },
   {
     id: 2,
-    name: "Ведение брендов ",
-    text: "Полный цикл: от контента до комьюнити"
+    name: "Разработка",
+    text: ["Индивидуальной стратегии работы с инфлюенсерами", "Креативных концепций и спецпроектов", "Сценариев и контент-планов под рекламные кампании"]
   },
   {
     id: 3,
-    name: "Продакшен ",
-    text: "Съёмка контента для брендов"
+    name: "Реализация рекламной кампании",
+    text: ["Ведение кампании в рамках договоренностей и дедлайнов", "Юридическое сопровождение, включая маркировку рекламы в ОРД,", "Подготовка отчетности по результатам", "Срочный запуск кампании, при необходимости в день обращения"]
   },
 
   {
     id: 4,
-    name: "Стратегия",
-    text: "Разработка креативных концепций "
+    name: "Дополнительные услуги",
+    text: ["Подбор и ведение амбассадора бренда", "Подбор ведущих и гостей для мероприятий, шоу", "Информирование об офлайн-активностях через инфлюенсеров", "Организация фото и видеосъемки, подкастов"]
   }
 ]
-export const  ComplexMarketing = () => {
+export const ComplexMarketing = () => {
   return (
     <main className="main">
       <section className="brand">
         <div className="container">
           <div className="brand_title">
-            <h3>Мы строим мост между<span> брендами</span> и аудиторией</h3>
+
+            <h3>Комплексный инфлюенс-маркетинг для <span> брендов</span> и госдиджитал-проектов</h3>
           </div>
           <div className="brand_cards">{
             data.map((el) =>
@@ -40,7 +41,10 @@ export const  ComplexMarketing = () => {
                 </div>
                 <div className="brand_card_bottom">
                   <div className="brand_card_line"></div>
-                  <p>{el.text}</p>
+                  <ul className="brand_card_ul">
+                    {el.text.length > 0 ? el.text.map((e) =>
+                      <li><span></span> {e}</li>
+                    ) : ""}</ul>
                 </div>
               </div>)
           }
@@ -58,8 +62,7 @@ export const  ComplexMarketing = () => {
         </div>
       </div>
 
-      <section className="complex">
-        <div className="container">
+      {/* <div className="container">
           <h1 className="complex_title">
             КОМПЛЕКСНЫЙ СПЕКТР{" "}
             <span>ИНФЛЮЕНС</span>-МАРКЕТИНГА
@@ -126,30 +129,29 @@ export const  ComplexMarketing = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="coplex_advesting">
-          <div className="scroll-wrapper">
-            <div className="complex_tags_row">
-              <span className="complex_tag">SMM</span>
-              <span className="complex_tag">PR</span>
-              <span className="complex_tag">ПРОДАКШЕН</span>
-              <span className="complex_tag">ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ</span>
-              <span className="complex_tag">ПОДБОР БЛОГЕРОВ</span>
-              <span className="complex_tag">КРЕАТИВНЫЕ СТРАТЕГИИ</span>
-              <span className="complex_tag">ИНФЛЮЕНС-МАРКЕТИНГ</span>
-            </div>
-            <div className="complex_tags_row">
-              <span className="complex_tag">SMM</span>
-              <span className="complex_tag">PR</span>
-              <span className="complex_tag">ПРОДАКШЕН</span>
-              <span className="complex_tag">ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ</span>
-              <span className="complex_tag">ПОДБОР БЛОГЕРОВ</span>
-              <span className="complex_tag">КРЕАТИВНЫЕ СТРАТЕГИИ</span>
-              <span className="complex_tag">ИНФЛЮЕНС-МАРКЕТИНГ</span>
-            </div>
+        </div> */}
+      <div className="coplex_advesting">
+        <div className="scroll-wrapper">
+          <div className="complex_tags_row">
+            <span className="complex_tag">SMM</span>
+            <span className="complex_tag">PR</span>
+            <span className="complex_tag">ПРОДАКШЕН</span>
+            <span className="complex_tag">ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ</span>
+            <span className="complex_tag">ПОДБОР БЛОГЕРОВ</span>
+            <span className="complex_tag">КРЕАТИВНЫЕ СТРАТЕГИИ</span>
+            <span className="complex_tag">ИНФЛЮЕНС-МАРКЕТИНГ</span>
+          </div>
+          <div className="complex_tags_row">
+            <span className="complex_tag">SMM</span>
+            <span className="complex_tag">PR</span>
+            <span className="complex_tag">ПРОДАКШЕН</span>
+            <span className="complex_tag">ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ</span>
+            <span className="complex_tag">ПОДБОР БЛОГЕРОВ</span>
+            <span className="complex_tag">КРЕАТИВНЫЕ СТРАТЕГИИ</span>
+            <span className="complex_tag">ИНФЛЮЕНС-МАРКЕТИНГ</span>
           </div>
         </div>
-      </section>
+      </div>
     </main>
   )
 }

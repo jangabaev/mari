@@ -28,7 +28,6 @@ export const Dashboard = () => {
                         <button className='btn btn-primary' onClick={() => clickButton()}>Оставить заявку</button>
                         <span className='dashboard_click_line'></span>
                     </div>
-                    <p className='dashboard_info_text'>Для нас инфлюенс-маркетинг — это не просто коллаборации, а способ выстраивать долгосрочные отношения между брендами и людьми, формировать эмоциональную связь и создавать истории, которые хочется разделить.</p>
                 </div>
             </div>
             <div className="dashboard_bacground">
