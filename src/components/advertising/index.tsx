@@ -15,8 +15,9 @@ export const Advertising = () => {
           <div className="stats_left">
             <div className="stats_left_top">
               <div className="stats_card stats_left_top_first">
-                <div className="stat_card_number"><h4>100</h4></div>
-                <div className="stat_card_description">Подбор, запуск, аналитика кампаний</div>
+                <div className="stat_card_number"><h4>10 <span>лет +</span></h4>
+                <h6> лет +</h6></div>
+                <div className="stat_card_description">Успешный опыт работы в инфлюенс-маркетинге наших специалистов</div>
                 <div className="stat_left_card_bg_first">
                   <div className="stat_left_card_bg_first_relative">
                     <img src="/assets/circle.png" alt="" />
@@ -24,8 +25,8 @@ export const Advertising = () => {
                 </div>
               </div>
               <div className="stats_card stats_left_top_second">
-                <div className="stat_card_number"><h4>100</h4></div>
-                <div className="stat_card_description">Подбор, запуск, аналитика кампаний</div>
+                <div className="stat_card_number"><h4>5 <span> лет</span></h4><h6> лет</h6></div>
+                <div className="stat_card_description">на рынке инфлюенс-маркетинга</div>
                 <div className="stat_left_card_bg_second">
                   <div className="stat_left_card_bg_first_relative">
                     <BackgroundCircle className="red" line={10} />
@@ -35,10 +36,10 @@ export const Advertising = () => {
             </div>
             <div className="stats_card stats_left_bottom">
               <div className="stat_card_number">
-                <h4>100%</h4>
-                <p>Довольных клиентов</p>
+                <h4>90%</h4>
+                <p>активных блогеров Дагестана и СКФО у нас на Эксклюзиве</p>
               </div>
-              <div className="stat_card_description">Подбор, запуск, аналитика кампаний </div>
+              <div className="stat_card_description">Собственная база блогеров</div>
               <div className="stat_left_card_bg_third">
                 <div className="stat_left_card_bg_third_relative">
                   <BackgroundCircle className="green" line={15} />
@@ -54,7 +55,7 @@ export const Advertising = () => {
                 <div className="stats_card stats_card_fourth">
                   <div className="stat_card_number">
                     <h4>350+</h4>
-                    <p>успешных кейсов продвижения</p>
+                    <p>реализованных кампаний</p>
                   </div>
                   <div className="stat_card_description">Подбор, запуск, аналитика кампаний</div>
                   <div className="stat_left_card_bg_fourth">
@@ -66,10 +67,10 @@ export const Advertising = () => {
                 <div className="stats_rigth_top_rigth">
                   <div className="stats_card stats_card_fifth">
                     <div className="stat_card_number">
-                      <h4>50</h4>
-                      <p>эксклюзивных блогеров</p>
+                      <h4></h4>
+                      <p>Работаем с самыми эффективными  инфлюенсерами России</p>
                     </div>
-                    <div className="stat_card_description">Подбор, запуск, аналитика кампаний</div>
+                    <div className="stat_card_description">Во всех соцсетях от TikTok до Telegram</div>
                     <div className="stat_left_card_bg_fifth">
                       <div className="stat_left_card_bg_fifth_relative">
                         <img src="/assets/triangle.png" alt="" />
@@ -94,10 +95,10 @@ export const Advertising = () => {
 
             <div className="stats_card stats_card_seventh">
               <div className="stat_card_number">
-                <h4>50</h4>
-                <p>эксклюзивных блогеров</p>
+                <h4>1000+</h4>
+                <p>проверенных блогеров</p>
               </div>
-              <div className="stat_card_description">Подбор, запуск, аналитика кампаний</div>
+              <div className="stat_card_description">Подпись: по всей России. По внутренней статистике агентства</div>
               <div className="stat_left_card_bg_seventh">
                 <div className="stat_left_card_bg_seventh_relative">
                   <img src="/assets/triangle.png" alt="" />

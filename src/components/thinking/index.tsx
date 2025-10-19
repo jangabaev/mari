@@ -3,84 +3,85 @@ import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "./style.css"
 
-const data = [{
-    id: 1,
-    name: "Василий пупкинский",
-    life: "Лайфстайл",
-    followers: "332к подписчиков",
-    img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
-}, {
-    id: 2,
-    name: "Василий пупкинский",
-    life: "Лайфстайл",
-    followers: "332к подписчиков",
-    img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
-}, {
-    id: 3,
-    name: "Василий пупкинский",
-    life: "Лайфстайл",
-    followers: "332к подписчиков",
-    img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
-}, {
-    id: 4,
-    name: "Василий пупкинский",
-    life: "Лайфстайл",
-    followers: "332к подписчиков",
-    img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
-}, {
-    id: 5,
-    name: "Василий пупкинский",
-    life: "Лайфстайл",
-    followers: "332к подписчиков",
-    img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
-}, {
-    id: 6,
-    name: "Василий пупкинский",
-    life: "Лайфстайл",
-    followers: "332к подписчиков",
-    img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
-}, {
-    id: 7,
-    name: "Василий пупкинский",
-    life: "Лайфстайл",
-    followers: "332к подписчиков",
-    img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
-}]
+// const data = [{
+//     id: 1,
+//     name: "Василий пупкинский",
+//     life: "Лайфстайл",
+//     followers: "332к подписчиков",
+//     img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
+// }, {
+//     id: 2,
+//     name: "Василий пупкинский",
+//     life: "Лайфстайл",
+//     followers: "332к подписчиков",
+//     img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
+// }, {
+//     id: 3,
+//     name: "Василий пупкинский",
+//     life: "Лайфстайл",
+//     followers: "332к подписчиков",
+//     img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
+// }, {
+//     id: 4,
+//     name: "Василий пупкинский",
+//     life: "Лайфстайл",
+//     followers: "332к подписчиков",
+//     img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
+// }, {
+//     id: 5,
+//     name: "Василий пупкинский",
+//     life: "Лайфстайл",
+//     followers: "332к подписчиков",
+//     img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
+// }, {
+//     id: 6,
+//     name: "Василий пупкинский",
+//     life: "Лайфстайл",
+//     followers: "332к подписчиков",
+//     img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
+// }, {
+//     id: 7,
+//     name: "Василий пупкинский",
+//     life: "Лайфстайл",
+//     followers: "332к подписчиков",
+//     img: "https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-17/CX9HT7jpQt.png"
+// }]
 
 export const ClientThink = () => {
     const [width, setWidth] = useState(window.innerWidth);
+    console.log(width)
 
     useEffect(() => {
         const handleResize = () => setWidth(window.innerWidth);
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-    const settings = {
-        className: "center",
-        centerPadding: "60px",
-        centerMode: true,
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToScroll: 1,
-        arrows: false,
-        adaptiveHeight: true,
-        slidesToShow: width < 600 ? 1 : width < 1000 ? 2 : width < 1400 ? 3 : 4,
-        responsive: [
-            {
-                breakpoint: 1400,
-                settings: { slidesToShow: 3 }
-            },
-            {
-                breakpoint: 1000,
-                settings: { slidesToShow: 2 }
-            },
-            {
-                breakpoint: 600,
-                settings: { slidesToShow: 1 }
-            }
-        ]
-    };
+    // const settings = {
+    //     className: "center",
+    //     centerPadding: "60px",
+    //     centerMode: true,
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     adaptiveHeight: true,
+    //     slidesToShow: width < 600 ? 1 : width < 1000 ? 2 : width < 1400 ? 3 : 4,
+    //     responsive: [
+    //         {
+    //             breakpoint: 1400,
+    //             settings: { slidesToShow: 3 }
+    //         },
+    //         {
+    //             breakpoint: 1000,
+    //             settings: { slidesToShow: 2 }
+    //         },
+    //         {
+    //             breakpoint: 600,
+    //             settings: { slidesToShow: 1 }
+    //         }
+    //     ]
+    // };
     return (
         <section className="cilents complex" id="bloger">
             {/* <div className="container">

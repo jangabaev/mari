@@ -386,7 +386,7 @@
     }
 
     .clients_logos {
-        opacity: .7;
+        opacity: .6;
         position: absolute;
         left: 0;
         right: 0;
@@ -397,7 +397,8 @@
     .clients_title {
         font-size: 32px;
         width: 100%;
-        font-weight: 400;
+        font-weight: 600;
+        line-height: 110%;
     }
 
     .client_logo_yandex {
@@ -407,6 +408,7 @@
         transform: translate(-50%, -50%);
         width: 280px;
         height: auto;
+        opacity: .7;
     }
 
     .client_logo_rostic {

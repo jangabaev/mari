@@ -5,7 +5,6 @@ const pages = [
     { name: "О нас", link: "home" },
     { name: "Услуги", link: "about" },
     { name: "Специализация", link: "statstika" },
-    { name: "Блогеры", link: "bloger" },
     { name: "Контакты", link: "contact" }
 ]
 export const Footer = () => {
@@ -17,7 +16,7 @@ export const Footer = () => {
                         <p className="footer-copyright">© 2025 ООО "МАРИ"</p>
                         <div className="footer-contact">
                             <a href='tel:+79166762266'>+7 (916) 676 - 22 - 66</a>
-                            <a href='https://t.me/Reklama_Elena'>hello@mari.ru</a>
+                            <a href='https://t.me/Reklama_Elena'>@Reklama_Elena</a>
                         </div>
                     </div>
                     <div className='footer_items'>

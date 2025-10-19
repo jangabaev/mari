@@ -1,11 +1,11 @@
-import { BackgroundCircle } from "../advertising/bacground/circle"
+// import { BackgroundCircle } from "../advertising/bacground/circle"
 import "./style.css"
 
 const data = [
   {
     id: 1,
     name: "Подбор инфлюенсеров",
-    text: ["Целевой аудитории,", "Охвата и вовлеченности,", "Тематики контента,", "Истории сотрудничества,", "Анализа эффективности"]
+    text: ["Целевой аудитории", "Охвата и вовлеченности", "Тематики контента", "Истории сотрудничества", "Анализа эффективности"]
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const data = [
   {
     id: 3,
     name: "Реализация рекламной кампании",
-    text: ["Ведение кампании в рамках договоренностей и дедлайнов", "Юридическое сопровождение, включая маркировку рекламы в ОРД,", "Подготовка отчетности по результатам", "Срочный запуск кампании, при необходимости в день обращения"]
+    text: ["Ведение кампании в рамках договоренностей и дедлайнов", "Юридическое сопровождение, включая маркировку рекламы в ОРД", "Подготовка отчетности по результатам", "Срочный запуск кампании, при необходимости в день обращения"]
   },
 
   {
@@ -26,11 +26,10 @@ const data = [
 ]
 export const ComplexMarketing = () => {
   return (
-    <main className="main">
+    <main className="main" id="about">
       <section className="brand">
         <div className="container">
           <div className="brand_title">
-
             <h3>Комплексный инфлюенс-маркетинг для <span> брендов</span> и госдиджитал-проектов</h3>
           </div>
           <div className="brand_cards">{
@@ -58,7 +57,7 @@ export const ComplexMarketing = () => {
 
       <div className="brand_cirle">
         <div className="brand_cirle_bg">
-          <BackgroundCircle className="black" />
+          {/* <BackgroundCircle className="black" /> */}
         </div>
       </div>
 

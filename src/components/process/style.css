@@ -94,6 +94,11 @@
   box-shadow: 0px 0px 10px rgba(255, 31, 143, 0.233);
 }
 
+.btn-third{
+     border: 1px solid #3B82F6;
+    color: #3B82F6;
+}
+
 .mobil_about-actions {
   display: none;
 }

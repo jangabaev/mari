@@ -17,9 +17,9 @@
 }
 
 .stats_left_top {
-  display: flex;
+  display: grid;
   gap: 30px;
-  flex: 50% 50%;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .stats_right {
@@ -60,6 +60,7 @@
   flex-direction: column;
   gap: 10px;
   z-index: 3;
+  max-width: 100%;
 }
 
 .stat_card_number h4 {
@@ -72,12 +73,30 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+  .stat_card_number h4 span{
+    display: none;
+  }
+
+.stat_card_number h6{
+   font-family: Century Gothic Paneuropean;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .stat_card_number p {
   font-weight: 400;
   font-style: Regular;
-  font-size: 28px;
+  font-size: 25px;
   color: #A3E635;
   line-height: 100%;
   letter-spacing: 0%;
@@ -88,7 +107,7 @@
 .stat_card_description {
   font-weight: 300;
   font-style: Light;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -272,6 +291,7 @@
     color: #FFFFFF;
     position: relative;
     overflow: hidden;
+    width: 100%;
   }
 
   .stat_card_number {
@@ -290,6 +310,10 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+  }
+
+  .stat_card_number h6{
+    font-size: 35px;
   }
 
   .stat_card_number p {
@@ -510,6 +534,10 @@
     padding: 0;
   }
 
+  .stat_card_number h6{
+    font-size: 30px;
+  }
+
   .stat_card_number p {
     font-weight: 400;
     font-style: Regular;
@@ -725,6 +753,14 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+  }
+
+  .stat_card_number h6{
+    display: none;
+  }
+
+    .stat_card_number h4 span{
+    display:flex;
   }
 
   .stat_card_number p {

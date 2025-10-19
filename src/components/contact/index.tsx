@@ -29,7 +29,7 @@ export const Contact = () => {
             </div>
           </div>
           <div className="contack_left_bottom">
-            <p className="contact_left_dectope_p">Ооо Мари … заменить на: ООО «МАРИ» ОГРН: 1215000028440, ИНН: 5047249433, М.о. г Химки, ул Кирова, дом 10, корпус 1, помещ/ком. 205/1 <strong><a href="/politika.pdf" target="_blank" rel="noopener noreferrer">  Юридическая информация</a></strong></p>
+            <p className="contact_left_dectope_p">ООО «МАРИ» ОГРН: 1215000028440, ИНН: 5047249433, М.о. г Химки, ул Кирова, дом 10, корпус 1, помещ/ком. 205/1 </p>
             <div className="contack_left_bottom_buttons">
               <a href="https:\\t.me\Reklama_Elena"><button className="contact_telegram"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="36" viewBox="0 0 42 36" fill="none">
                 <path d="M41.6999 3.77066L35.3874 33.3227C34.9166 35.404 33.7083 35.8727 31.9624 34.9332L22.4937 27.9498L17.8583 32.3811C17.3895 32.8519 16.9187 33.3227 15.8437 33.3227L16.5833 23.5832L34.2458 7.53316C34.9833 6.79358 34.0437 6.52483 33.1041 7.13108L11.1437 20.9644L1.67284 18.0769C-0.408413 17.4061 -0.408414 15.9936 2.14367 15.0561L38.9458 0.749826C40.7583 0.212326 42.3041 1.15399 41.6999 3.77066Z" fill="#3B82F6" />

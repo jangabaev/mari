@@ -3,7 +3,7 @@ import "./style.css"
 import { AnimationProgres } from './animationProgres'
 export const Process = () => {
   return (
-    <section className="about" id="about">
+    <section className="about">
       <div className="container">
         <div className="about-card">
           <div className="about-content">
@@ -16,7 +16,7 @@ export const Process = () => {
               <a href="#contact" className="btn btn-primary">
                 Получить медиакит
               </a>
-              <a href="https://t.me/Reklama_Elena" className="btn btn-secondary">
+              <a href="https://t.me/Reklama_Elena" className="btn btn-third">
                 отправить бриф
               </a>
             </div>
@@ -29,7 +29,7 @@ export const Process = () => {
           <a href="#contact" className="btn btn-primary">
             Получить медиакит
           </a>
-          <a href="https://t.me/Reklama_Elena" className="btn btn-secondary">
+          <a href="https://t.me/Reklama_Elena" className="btn btn-third">
             отправить бриф
           </a>
         </div>
