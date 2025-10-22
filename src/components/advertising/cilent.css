@@ -1,10 +1,15 @@
-.clients_section {
+.clients_section_div {
     margin-top: 40px;
     border-radius: 50px;
     border: 1px solid white;
     position: relative;
     padding: 200px 75px;
     overflow: hidden;
+}
+
+.clients_section {
+    margin-top: 50px;
+    color: white;
 }
 
 .clients_content {
@@ -20,7 +25,7 @@
 
 .clients_title {
     font-family: Century Gothic;
-    font-weight: 600;
+    font-weight: 00;
     font-style: Regular;
     font-size: 64px;
     line-height: 100%;
@@ -108,9 +113,20 @@
     transform: translate(-50%, -50%);
 }
 
+.clients_title_text_p {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 23px;
+    color: #ffffff;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: .6;
+    margin: 0;
+}
+
 @media (max-width:1600px) {
-    .clients_section {
-        margin-top: 40px;
+    .clients_section_div {
+        margin-top: 60px;
         border-radius: 35px;
         padding: 150px 50px;
     }
@@ -196,8 +212,8 @@
 
 
 @media (max-width:1200px) {
-    .clients_section {
-        margin-top: 40px;
+    .clients_section_div {
+        margin-top: 60px;
         border-radius: 35px;
         padding: 150px 50px;
     }
@@ -276,13 +292,24 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .clients_title_text_p {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 100%;
+        letter-spacing: 0%;
+        opacity: .6;
+        margin: 0;
+    }
 }
 
 
 
 @media (max-width:920px) {
-    .clients_section {
-        margin-top: 40px;
+    .clients_section_div {
+        margin-top: 60px;
         border-radius: 35px;
         padding: 100px 35px;
     }
@@ -372,8 +399,8 @@
 
 
 @media (max-width:480px) {
-    .clients_section {
-        margin-top: 20px;
+    .clients_section_div {
+        margin-top: 40px;
         border-radius: 35px;
         padding: 50px 30px;
     }
@@ -386,7 +413,8 @@
     }
 
     .clients_logos {
-        opacity: .6;
+        opacity: .3;
+        filter: blur(.7px);
         position: absolute;
         left: 0;
         right: 0;
@@ -397,7 +425,6 @@
     .clients_title {
         font-size: 32px;
         width: 100%;
-        font-weight: 600;
         line-height: 110%;
     }
 
@@ -408,10 +435,11 @@
         transform: translate(-50%, -50%);
         width: 280px;
         height: auto;
-        opacity: .7;
+        opacity: .5;
     }
 
     .client_logo_rostic {
+        opacity: .6;
         position: absolute;
         transform: translate(-50%, -50%);
         left: 85%;
@@ -462,5 +490,16 @@
         top: 50%;
         transform: translate(-50%, -50%);
         display: none;
+    }
+
+    .clients_title_text_p {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 15px;
+        color: #ffffff;
+        line-height: 100%;
+        letter-spacing: 0%;
+        opacity: .6;
+        margin: 0;
     }
 }

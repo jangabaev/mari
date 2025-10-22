@@ -128,7 +128,7 @@
 
 /* second card */
 .stats_left_top_second {
-  background-color: #ff1f8f8c;
+  background-color: #FFFFFF1A;
 }
 
 
@@ -189,7 +189,7 @@
 /* sixth */
 
 .stats_card_sixth {
-  background-color: #FF1F8F80;
+  background-color: #FFFFFF1A;
   height: 100%;
   padding: 45px 40px;
 }
@@ -350,7 +350,7 @@
 
   /* second card */
   .stats_left_top_second {
-    background-color: #ff1f8f8c;
+    background-color: #FFFFFF1A;
   }
 
 
@@ -412,7 +412,6 @@
   /* sixth */
 
   .stats_card_sixth {
-    background-color: #FF1F8F80;
     height: 100%;
     padding: 45px 40px;
   }
@@ -570,10 +569,7 @@
   }
 
 
-  /* second card */
-  .stats_left_top_second {
-    background-color: #ff1f8f8c;
-  }
+
 
 
   .stat_left_card_bg_second {
@@ -634,7 +630,6 @@
   /* sixth */
 
   .stats_card_sixth {
-    background-color: #FF1F8F80;
     height: 100%;
     padding: 45px 40px;
   }
@@ -795,10 +790,6 @@
   }
 
 
-  /* second card */
-  .stats_left_top_second {
-    background-color: #ff1f8f8c;
-  }
 
 
   /* third card */
@@ -851,7 +842,6 @@
   /* sixth */
 
   .stats_card_sixth {
-    background-color: #FF1F8F80;
     height: 100%;
     padding: 45px 40px;
   }
@@ -1005,10 +995,6 @@
   }
 
 
-  /* second card */
-  .stats_left_top_second {
-    background-color: #ff1f8f8c;
-  }
 
 
   /* third card */
@@ -1061,7 +1047,6 @@
   /* sixth */
 
   .stats_card_sixth {
-    background-color: #FF1F8F80;
     height: 100%;
     padding: 45px 40px;
   }
@@ -1230,12 +1215,6 @@
     bottom: 0;
   }
 
-
-  /* second card */
-  .stats_left_top_second {
-    background-color: #ff1f8f8c;
-  }
-
   
 .stat_left_card_bg_second{
   position: absolute;
@@ -1294,7 +1273,6 @@
   /* sixth */
 
   .stats_card_sixth {
-    background-color: #FF1F8F80;
     height: 100%;
     padding: 30px 20px;
   }

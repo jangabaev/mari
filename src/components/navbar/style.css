@@ -123,6 +123,7 @@
     list-style: none;
     gap: 26px;
     color: #FFFFFF;
+    margin-top: 20px;
 }
 
 .header_mobil_menu_ul>li {
@@ -155,6 +156,7 @@
     }
 
     .headers_top_button {
+        margin-top: 20px;
         padding: 11px 22px;
         border-radius: 75px;
         font-size: 12px;

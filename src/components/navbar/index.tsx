@@ -5,8 +5,7 @@ import "./style.css"
 const pages = [
     { name: "О нас", link: "home" },
     { name: "Услуги", link: "about" },
-    { name: "Специализация", link: "statstika" },
-    { name: "Блогеры", link: "bloger" },
+    { name: "Результаты", link: "statstika" },
     { name: "Контакты", link: "contact" }
 ]
 

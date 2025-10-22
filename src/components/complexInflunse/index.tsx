@@ -1,4 +1,5 @@
 // import { BackgroundCircle } from "../advertising/bacground/circle"
+import { useModal } from "../../modal.context"
 import "./style.css"
 
 const data = [
@@ -25,6 +26,18 @@ const data = [
   }
 ]
 export const ComplexMarketing = () => {
+
+  const { openModal } = useModal()
+      const handleScroll = (link: string) => {
+          const section = document.getElementById(link)
+          if (section) {
+              section.scrollIntoView({ behavior: "smooth", block: "start" })
+          }
+      }
+      const clickButton = () => {
+          handleScroll("contact")
+          openModal()
+      }
   return (
     <main className="main" id="about">
       <section className="brand">
@@ -39,6 +52,7 @@ export const ComplexMarketing = () => {
                   <h5>{el.name}</h5>
                 </div>
                 <div className="brand_card_bottom">
+                  {el.id===1?<h3>с учетом:</h3>:<h3 className="brand_card_bottom_1">1</h3>}
                   <div className="brand_card_line"></div>
                   <ul className="brand_card_ul">
                     {el.text.length > 0 ? el.text.map((e) =>
@@ -49,7 +63,7 @@ export const ComplexMarketing = () => {
           }
           </div>
           <div className='brand_bottom'>
-            <button className='brand_bottom_button btn btn-secondary'>Оставить заявку</button>
+            <button className='brand_bottom_button btn btn-third' onClick={clickButton}>Оставить заявку</button>
             <span className='dashboard_click_line brand_bottom_line'></span>
           </div>
         </div>
